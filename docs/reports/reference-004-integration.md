@@ -21,3 +21,9 @@ Preserved earlier Toon Studio color extraction under `references/toon-studio/`, 
 ## Integration procedure
 
 Push the reviewed new import on `codex/product-independent-creative-learning`. Mark draft PR #1 ready and merge it into main with expected head `1d5de2f`. Retarget stacked PR #2 to main, mark ready and merge its verified new head. Fetch/fast-forward the local main and confirm remote/local SHA equality. Record actual resulting main state in HANDOFF/PROGRESS after completion. No force pushes or branch deletion.
+
+## Completed
+
+PR #1 merged (`cf509189625110fc2469c5de6189f5ef7b6dfa59`); PR #2 retargeted to main and merged (`017014e1a426c0d60a289bf9624e04dfb2232292`). Local main fast-forwarded successfully and its content exactly matched reviewed head `f1e61f9`; there were no merge conflicts. No force pushes, deployment, paid calls or video production occurred.
+
+Post-merge checks on local main: 64 tests/typecheck/lint PASS; GSAP 3.15.0 paused-seek PASS after synchronizing local dependencies. Final documentation records the actual merge state.

@@ -76,3 +76,11 @@ Extended the existing ad-render skill as the Video Motion Intelligence entry poi
 Owner explicitly requested merging all work into main. Added raw-upload reference 004 as learning only: full 236-frame visual review, six native samples, signal-only audio analysis, 14-domain evidence/unknowns and unapproved assembly/burst/secondary-motion recipes. Typography evidence reuses the canonical existing technique; generic approved executors stay available across reference selection. Earlier Toon Studio palette extraction is preserved under `references/toon-studio/` without altering product defaults. See `docs/reports/reference-004-integration.md`.
 
 64 tests/typecheck/lint pass. Merge preparation is authorized; actual merge completion is recorded in the following status update. No new advertisements, paid APIs or deployments were requested.
+
+## Main integration completed (2026-10-10)
+
+Owner-approved PR #1 merged as `cf509189625110fc2469c5de6189f5ef7b6dfa59`; retargeted PR #2 merged as `017014e1a426c0d60a289bf9624e04dfb2232292`. Local main fast-forwarded to GitHub main. Its tree exactly matches reviewed head `f1e61f911c7bfe9dcff6c8c7c08cd0a3aa09a520`; no merge conflicts or source changes introduced. All reference learning, GSAP, product-independent adaptation, permanent skill/Codex policy, Toon palette facts and reference 004 evidence are now integrated. Standing future main merges still require explicit owner approval.
+
+Validation before integration: 64 tests/typecheck/lint and production build PASS; no new video export. Raw reference 004 is retained in ignored local `out/reference-library/reference-004/source.mp4`; committed evidence is under `references/reference-004/`. Original ads and briefs remain unchanged.
+
+Post-merge local main verification: all 64 tests/typecheck/lint PASS; GSAP 3.15.0 installed and paused timeline seek smoke PASS. Local source preservation verified; final status documentation pushed to main.
