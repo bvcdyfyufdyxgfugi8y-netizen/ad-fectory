@@ -1,0 +1,26 @@
+{
+  "id": "demo-nafas-cold-brew",
+  "client": { "name": "Demo client (fictional)", "brand": "نَفَس", "handle": "@nafas.demo" },
+  "product": {
+    "name": "نَفَس كولد برو",
+    "category": "قهوة باردة جاهزة",
+    "features": ["تحضير بارد 18 ساعة", "بدون سكر مضاف", "علبة 250 مل جاهزة للطريق"],
+    "images": ["assets/can.svg", "assets/glass.svg"],
+    "price": 12,
+    "oldPrice": 15,
+    "currency": "ريال"
+  },
+  "brand": {
+    "logo": "assets/logo.svg",
+    "colors": { "primary": "#E8B04B", "secondary": "#7A4424", "accent": "#F3C463", "background": "#1B120D", "text": "#FFF8EE" }
+  },
+  "audience": "موظفون وطلاب يحبون القهوة الباردة",
+  "language": "ar",
+  "dialect": "سعودي",
+  "goal": "launch",
+  "tone": "fast",
+  "durationSec": 20,
+  "cta": "اطلبها الحين",
+  "hashtags": ["قهوة_باردة", "كولد_برو", "نفس"],
+  "voiceover": { "mode": "none" }
+}

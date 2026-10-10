@@ -1,0 +1,32 @@
+{
+  "before": "samples/phase-1/demo-nafas-cold-brew.mp4",
+  "after": "samples/engine-regression/before.mp4",
+  "beforeMetadata": {
+    "width": 1080,
+    "height": 1920,
+    "fps": 30,
+    "duration": 20,
+    "vcodec": "h264",
+    "pixfmt": "yuv420p",
+    "acodec": "aac",
+    "sampleRate": 48000,
+    "channels": 2
+  },
+  "afterMetadata": {
+    "width": 1080,
+    "height": 1920,
+    "fps": 30,
+    "duration": 20,
+    "vcodec": "h264",
+    "pixfmt": "yuv420p",
+    "acodec": "aac",
+    "sampleRate": 48000,
+    "channels": 2
+  },
+  "comparedFrames": 600,
+  "afterFrames": 600,
+  "differentFrames": 600,
+  "decodedVideoEqual": false,
+  "decodedAudioEqual": true,
+  "exactDecodedEquivalence": false
+}

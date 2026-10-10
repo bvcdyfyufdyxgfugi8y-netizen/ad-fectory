@@ -1,0 +1,131 @@
+{
+  "id": "project-eab5dfbb-e25a-4c26-b908-0f68433edd0f-v1",
+  "briefId": "project-eab5dfbb-e25a-4c26-b908-0f68433edd0f",
+  "template": "bold-commercial",
+  "strategy": "product-reveal",
+  "language": "ar",
+  "direction": "rtl",
+  "fps": 30,
+  "width": 1080,
+  "height": 1920,
+  "bpm": 120,
+  "durationInFrames": 300,
+  "hooks": [
+    "تدور على قهوة باردة؟",
+    "تعرّف على نَفَس",
+    "نَفَس تقدّم نَفَس"
+  ],
+  "selectedHook": 1,
+  "brand": {
+    "name": "نَفَس",
+    "handle": "@nafas.demo",
+    "logo": "assets/logo.svg",
+    "colors": {
+      "primary": "#E8B04B",
+      "secondary": "#7A4424",
+      "accent": "#F3C463",
+      "background": "#1B120D",
+      "text": "#FFF8EE"
+    }
+  },
+  "scenes": [
+    {
+      "id": "s1-hook",
+      "kind": "hook",
+      "durationInFrames": 75,
+      "headline": "تعرّف على نَفَس",
+      "source": [
+        "product.name",
+        "template"
+      ],
+      "motion": "kinetic-pop",
+      "transition": "none",
+      "emphasis": []
+    },
+    {
+      "id": "s2-reveal",
+      "kind": "reveal",
+      "durationInFrames": 75,
+      "headline": "نَفَس",
+      "sub": "قهوة باردة",
+      "source": [
+        "product.name",
+        "product.category"
+      ],
+      "image": "assets/can.svg",
+      "motion": "mask-reveal",
+      "transition": "wipe",
+      "emphasis": []
+    },
+    {
+      "id": "s3-benefit",
+      "kind": "benefit",
+      "durationInFrames": 75,
+      "headline": "بدون سكر مضاف",
+      "sub": "01",
+      "source": [
+        "product.features[0]"
+      ],
+      "image": "assets/glass.svg",
+      "motion": "slide-card",
+      "transition": "slide-up",
+      "emphasis": []
+    },
+    {
+      "id": "s4-cta",
+      "kind": "cta",
+      "durationInFrames": 75,
+      "headline": "اطلب اليوم",
+      "sub": "@nafas.demo",
+      "source": [
+        "approvedCopy.s4-cta.headline",
+        "approvedCopy.s4-cta.sub"
+      ],
+      "image": "assets/can.svg",
+      "motion": "pulse",
+      "transition": "wipe",
+      "emphasis": []
+    }
+  ],
+  "audio": {
+    "musicSeed": 75182,
+    "sfx": [
+      {
+        "frame": 4,
+        "sound": "pop",
+        "gainDb": -10
+      },
+      {
+        "frame": 65,
+        "sound": "whoosh",
+        "gainDb": -9
+      },
+      {
+        "frame": 67,
+        "sound": "impact",
+        "gainDb": -6
+      },
+      {
+        "frame": 140,
+        "sound": "whoosh",
+        "gainDb": -9
+      },
+      {
+        "frame": 152,
+        "sound": "tick",
+        "gainDb": -12
+      },
+      {
+        "frame": 195,
+        "sound": "riser",
+        "gainDb": -12
+      },
+      {
+        "frame": 215,
+        "sound": "whoosh",
+        "gainDb": -9
+      }
+    ]
+  },
+  "approved": true
+}

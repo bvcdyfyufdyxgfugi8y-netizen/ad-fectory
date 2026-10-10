@@ -1,0 +1,19 @@
+{
+  "briefId": "demo-nafas-cold-brew",
+  "director": "rule-based@1",
+  "final": "out/demo-nafas-cold-brew/delivery/demo-nafas-cold-brew.mp4",
+  "timings": {
+    "audio": 0,
+    "render": 0,
+    "mux": 1,
+    "qc": 9.9,
+    "delivery": 3,
+    "total": 13.9
+  },
+  "cached": {
+    "audio": true,
+    "video": true
+  },
+  "paidApiCalls": 0,
+  "costUSD": 0
+}

@@ -1,0 +1,19 @@
+{
+  "briefId": "demo-mint-bottle",
+  "director": "rule-based@1",
+  "final": "out/demo-mint-bottle/delivery/demo-mint-bottle.mp4",
+  "timings": {
+    "audio": 0,
+    "render": 112.7,
+    "mux": 0.6,
+    "qc": 5.1,
+    "delivery": 3.1,
+    "total": 121.5
+  },
+  "cached": {
+    "audio": true,
+    "video": false
+  },
+  "paidApiCalls": 0,
+  "costUSD": 0
+}

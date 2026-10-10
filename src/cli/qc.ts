@@ -1,0 +1,11 @@
+import fs from "node:fs";
+import { StoryboardSchema } from "../core/schema.ts";
+import { validatePlan } from "../engine/validate.ts";
+import { qcMarkdown, runQc } from "../qc/qc.ts";
+const [video, storyboard] = process.argv.slice(2);
+if (!video || !storyboard) throw new Error("Usage: npm run qc -- <video.mp4> <storyboard.json>");
+const sb = StoryboardSchema.parse(JSON.parse(fs.readFileSync(storyboard, "utf8")));
+validatePlan(sb);
+const report = runQc(video, sb);
+console.log(qcMarkdown(report));
+if (!report.passed) process.exitCode = 2;

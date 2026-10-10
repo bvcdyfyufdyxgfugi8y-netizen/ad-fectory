@@ -1,0 +1,14 @@
+node_modules/
+# every job writes here; regenerable from the brief (see README)
+out/
+cache/
+.remotion/
+.env
+.env.*
+!.env.example
+*.log
+data/
+.next/
+next-env.d.ts
+*.tsbuildinfo
+test-results/

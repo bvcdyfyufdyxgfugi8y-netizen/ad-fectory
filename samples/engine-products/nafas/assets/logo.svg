@@ -1,0 +1,10 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 200 200" width="200" height="200">
+  <!-- Demo brand mark for the fictional brand "Nafas" (original artwork). -->
+  <circle cx="100" cy="100" r="94" fill="#e8b04b"/>
+  <g fill="none" stroke="#1b120d" stroke-width="12" stroke-linecap="round">
+    <path d="M72 128 C52 102 92 84 72 58"/>
+    <path d="M100 134 C80 102 120 80 100 46"/>
+    <path d="M128 128 C108 102 148 84 128 58"/>
+  </g>
+  <rect x="58" y="144" width="84" height="12" rx="6" fill="#1b120d"/>
+</svg>

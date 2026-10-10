@@ -1,0 +1,19 @@
+{
+  "briefId": "render-b047b758-952d-4c88-8357-e09c585cca4a",
+  "director": "rule-based@1",
+  "final": "out/render-b047b758-952d-4c88-8357-e09c585cca4a/delivery/render-b047b758-952d-4c88-8357-e09c585cca4a.mp4",
+  "timings": {
+    "audio": 0,
+    "render": 310.6,
+    "mux": 0.9,
+    "qc": 10.8,
+    "delivery": 7.1,
+    "total": 329.4
+  },
+  "cached": {
+    "audio": true,
+    "video": false
+  },
+  "paidApiCalls": 0,
+  "costUSD": 0
+}

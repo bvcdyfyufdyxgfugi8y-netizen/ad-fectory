@@ -1,0 +1,54 @@
+{
+  "name": "ad-factory",
+  "version": "0.3.0",
+  "description": "AD Factory: short vertical ad production engine (brief \u2192 storyboard \u2192 motion \u2192 audio \u2192 render \u2192 QC \u2192 delivery)",
+  "private": true,
+  "license": "UNLICENSED",
+  "type": "module",
+  "engines": {
+    "node": ">=22.13"
+  },
+  "scripts": {
+    "storyboard": "tsx src/cli/produce.ts --stage storyboard",
+    "produce": "tsx src/cli/produce.ts",
+    "preview": "tsx src/cli/produce.ts --preview",
+    "studio": "remotion studio src/remotion/index.ts --public-dir=briefs/demo-nafas --no-open",
+    "qc": "tsx src/cli/qc.ts",
+    "typecheck": "tsc --noEmit",
+    "lint": "eslint .",
+    "test": "node --import tsx --test --test-isolation=none \"tests/**/*.test.ts\"",
+    "e2e": "tsx src/cli/e2e.ts",
+    "check": "npm run typecheck && npm run lint && npm run test",
+    "dev": "tsx src/server/start.ts",
+    "build": "next build --webpack",
+    "start": "tsx src/server/start.ts --production",
+    "worker": "tsx src/server/worker.ts",
+    "test:ui": "playwright test"
+  },
+  "dependencies": {
+    "@fontsource-variable/alexandria": "5.3.0",
+    "@remotion/bundler": "4.0.529",
+    "@remotion/cli": "4.0.529",
+    "@remotion/player": "4.0.529",
+    "@remotion/renderer": "4.0.529",
+    "@remotion/transitions": "4.0.529",
+    "@tailwindcss/postcss": "4.3.3",
+    "next": "16.4.0",
+    "react": "19.3.0",
+    "react-dom": "19.3.0",
+    "remotion": "4.0.529",
+    "tailwindcss": "4.3.3",
+    "zod": "4.6.5"
+  },
+  "devDependencies": {
+    "@eslint/js": "9.39.5",
+    "@playwright/test": "^1.64.0",
+    "@types/node": "22.20.5",
+    "@types/react": "19.3.0",
+    "@types/react-dom": "19.3.0",
+    "eslint": "9.39.5",
+    "tsx": "4.23.15",
+    "typescript": "5.9.3",
+    "typescript-eslint": "8.71.1"
+  }
+}

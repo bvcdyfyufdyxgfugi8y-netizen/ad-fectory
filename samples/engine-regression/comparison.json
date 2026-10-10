@@ -1,0 +1,43 @@
+{
+  "before": "samples/engine-regression/before.mp4",
+  "after": "out/demo-nafas-cold-brew/delivery/demo-nafas-cold-brew.mp4",
+  "beforeMetadata": {
+    "width": 1080,
+    "height": 1920,
+    "fps": 30,
+    "duration": 20,
+    "vcodec": "h264",
+    "pixfmt": "yuv420p",
+    "acodec": "aac",
+    "sampleRate": 48000,
+    "channels": 2
+  },
+  "afterMetadata": {
+    "width": 1080,
+    "height": 1920,
+    "fps": 30,
+    "duration": 20,
+    "vcodec": "h264",
+    "pixfmt": "yuv420p",
+    "acodec": "aac",
+    "sampleRate": 48000,
+    "channels": 2
+  },
+  "comparedFrames": 600,
+  "afterFrames": 600,
+  "differentFrames": 94,
+  "decodedVideoEqual": false,
+  "decodedAudioEqual": true,
+  "exactDecodedEquivalence": false,
+  "ssimMean": 0.9993375699999999,
+  "ssimMinimum": 0.99028,
+  "ssimMinimumFrame": 431,
+  "inspectedFramePairs": [
+    200,
+    380,
+    431
+  ],
+  "finding": "No obvious layout/text/product change in inspected pairs; exact decoded video equivalence is NOT established. Cause of residual pixel differences is not isolated.",
+  "afterSnapshot": "samples/engine-regression/after.mp4",
+  "afterSnapshotSha256": "64845c3f2de310925bf04d3b5d322b91715be850c7abc49c28a7c96ea24a1851"
+}

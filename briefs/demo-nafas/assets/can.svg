@@ -1,0 +1,44 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 600 1000" width="600" height="1000">
+  <!-- Demo product drawn for AD Factory (original artwork, no third-party assets). -->
+  <defs>
+    <linearGradient id="metal" x1="0" x2="1">
+      <stop offset="0" stop-color="#2a1a12"/><stop offset="0.18" stop-color="#5a3a28"/>
+      <stop offset="0.32" stop-color="#8a5e43"/><stop offset="0.5" stop-color="#4a2e20"/>
+      <stop offset="0.82" stop-color="#2b1b13"/><stop offset="1" stop-color="#1a100b"/>
+    </linearGradient>
+    <linearGradient id="band" x1="0" x2="1">
+      <stop offset="0" stop-color="#b9822c"/><stop offset="0.3" stop-color="#f3c463"/>
+      <stop offset="0.55" stop-color="#e8b04b"/><stop offset="1" stop-color="#9a6a22"/>
+    </linearGradient>
+    <linearGradient id="rim" x1="0" x2="1">
+      <stop offset="0" stop-color="#8d8d8d"/><stop offset="0.35" stop-color="#f2f2f2"/>
+      <stop offset="0.6" stop-color="#b5b5b5"/><stop offset="1" stop-color="#6d6d6d"/>
+    </linearGradient>
+    <linearGradient id="shine" x1="0" x2="1">
+      <stop offset="0" stop-color="#fff" stop-opacity="0"/><stop offset="0.5" stop-color="#fff" stop-opacity="0.35"/>
+      <stop offset="1" stop-color="#fff" stop-opacity="0"/>
+    </linearGradient>
+  </defs>
+  <ellipse cx="300" cy="958" rx="190" ry="26" fill="#000" opacity="0.35"/>
+  <path d="M120 150 Q120 110 160 100 L440 100 Q480 110 480 150 L480 880 Q480 930 430 940 L170 940 Q120 930 120 880 Z" fill="url(#metal)"/>
+  <rect x="120" y="390" width="360" height="300" fill="url(#band)"/>
+  <rect x="120" y="398" width="360" height="6" fill="#1b120d" opacity="0.5"/>
+  <rect x="120" y="676" width="360" height="6" fill="#1b120d" opacity="0.5"/>
+  <!-- steam mark -->
+  <g fill="none" stroke="#1b120d" stroke-width="16" stroke-linecap="round">
+    <path d="M262 600 C232 560 292 530 262 480"/>
+    <path d="M300 610 C270 560 330 520 300 455"/>
+    <path d="M338 600 C308 560 368 530 338 480"/>
+  </g>
+  <rect x="236" y="620" width="128" height="16" rx="8" fill="#1b120d"/>
+  <!-- top rim -->
+  <ellipse cx="300" cy="112" rx="168" ry="30" fill="url(#rim)"/>
+  <ellipse cx="300" cy="106" rx="140" ry="20" fill="#9c9c9c"/>
+  <rect x="268" y="92" width="64" height="18" rx="9" fill="#d8d8d8"/>
+  <rect x="160" y="140" width="60" height="780" fill="url(#shine)" opacity="0.7"/>
+  <!-- condensation -->
+  <g fill="#fff" opacity="0.45">
+    <circle cx="190" cy="250" r="6"/><circle cx="410" cy="300" r="5"/><circle cx="380" cy="780" r="7"/>
+    <circle cx="200" cy="820" r="5"/><circle cx="440" cy="210" r="4"/><circle cx="160" cy="740" r="4"/>
+  </g>
+</svg>

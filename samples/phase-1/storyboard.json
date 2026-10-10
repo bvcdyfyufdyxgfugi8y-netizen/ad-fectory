@@ -1,0 +1,205 @@
+{
+  "id": "demo-nafas-cold-brew-v1",
+  "briefId": "demo-nafas-cold-brew",
+  "template": "bold-commercial",
+  "strategy": "product-reveal",
+  "language": "ar",
+  "direction": "rtl",
+  "fps": 30,
+  "width": 1080,
+  "height": 1920,
+  "bpm": 120,
+  "durationInFrames": 600,
+  "hooks": [
+    "تدور على قهوة باردة جاهزة؟",
+    "تعرّف على نَفَس كولد برو",
+    "نَفَس تقدّم نَفَس كولد برو"
+  ],
+  "selectedHook": 1,
+  "brand": {
+    "name": "نَفَس",
+    "handle": "@nafas.demo",
+    "logo": "assets/logo.svg",
+    "colors": {
+      "primary": "#E8B04B",
+      "secondary": "#7A4424",
+      "accent": "#F3C463",
+      "background": "#1B120D",
+      "text": "#FFF8EE"
+    }
+  },
+  "scenes": [
+    {
+      "id": "s1-hook",
+      "kind": "hook",
+      "durationInFrames": 90,
+      "headline": "تعرّف على نَفَس كولد برو",
+      "source": [
+        "product.name",
+        "template"
+      ],
+      "motion": "kinetic-pop",
+      "transition": "none",
+      "emphasis": []
+    },
+    {
+      "id": "s2-reveal",
+      "kind": "reveal",
+      "durationInFrames": 105,
+      "headline": "نَفَس كولد برو",
+      "sub": "قهوة باردة جاهزة",
+      "source": [
+        "product.name",
+        "product.category"
+      ],
+      "image": "assets/can.svg",
+      "motion": "mask-reveal",
+      "transition": "wipe",
+      "emphasis": []
+    },
+    {
+      "id": "s3-benefit",
+      "kind": "benefit",
+      "durationInFrames": 90,
+      "headline": "تحضير بارد 18 ساعة",
+      "sub": "01",
+      "source": [
+        "product.features[0]"
+      ],
+      "image": "assets/glass.svg",
+      "motion": "slide-card",
+      "transition": "slide-up",
+      "emphasis": []
+    },
+    {
+      "id": "s4-benefit",
+      "kind": "benefit",
+      "durationInFrames": 60,
+      "headline": "بدون سكر مضاف",
+      "sub": "02",
+      "source": [
+        "product.features[1]"
+      ],
+      "image": "assets/can.svg",
+      "motion": "slide-card",
+      "transition": "fade",
+      "emphasis": []
+    },
+    {
+      "id": "s5-benefit",
+      "kind": "benefit",
+      "durationInFrames": 90,
+      "headline": "علبة 250 مل جاهزة للطريق",
+      "sub": "03",
+      "source": [
+        "product.features[2]"
+      ],
+      "image": "assets/glass.svg",
+      "motion": "slide-card",
+      "transition": "fade",
+      "emphasis": []
+    },
+    {
+      "id": "s6-offer",
+      "kind": "offer",
+      "durationInFrames": 90,
+      "headline": "12 ريال",
+      "sub": "بدل 15 ريال",
+      "source": [
+        "product.price",
+        "product.currency",
+        "product.oldPrice",
+        "template"
+      ],
+      "motion": "stamp",
+      "transition": "zoom",
+      "emphasis": []
+    },
+    {
+      "id": "s7-cta",
+      "kind": "cta",
+      "durationInFrames": 75,
+      "headline": "اطلبها الحين",
+      "sub": "@nafas.demo",
+      "source": [
+        "cta",
+        "client.handle"
+      ],
+      "image": "assets/can.svg",
+      "motion": "pulse",
+      "transition": "wipe",
+      "emphasis": []
+    }
+  ],
+  "audio": {
+    "musicSeed": 93014,
+    "sfx": [
+      {
+        "frame": 4,
+        "sound": "pop",
+        "gainDb": -10
+      },
+      {
+        "frame": 80,
+        "sound": "whoosh",
+        "gainDb": -9
+      },
+      {
+        "frame": 82,
+        "sound": "impact",
+        "gainDb": -6
+      },
+      {
+        "frame": 185,
+        "sound": "whoosh",
+        "gainDb": -9
+      },
+      {
+        "frame": 197,
+        "sound": "tick",
+        "gainDb": -12
+      },
+      {
+        "frame": 275,
+        "sound": "whoosh",
+        "gainDb": -9
+      },
+      {
+        "frame": 287,
+        "sound": "tick",
+        "gainDb": -12
+      },
+      {
+        "frame": 335,
+        "sound": "whoosh",
+        "gainDb": -9
+      },
+      {
+        "frame": 347,
+        "sound": "tick",
+        "gainDb": -12
+      },
+      {
+        "frame": 425,
+        "sound": "whoosh",
+        "gainDb": -9
+      },
+      {
+        "frame": 433,
+        "sound": "impact",
+        "gainDb": -5
+      },
+      {
+        "frame": 495,
+        "sound": "riser",
+        "gainDb": -12
+      },
+      {
+        "frame": 515,
+        "sound": "whoosh",
+        "gainDb": -9
+      }
+    ]
+  },
+  "approved": false
+}

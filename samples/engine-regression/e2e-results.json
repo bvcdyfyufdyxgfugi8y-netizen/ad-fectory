@@ -1,0 +1,17 @@
+{
+  "result": "PASS",
+  "firstSeconds": 336.6,
+  "cachedSeconds": 16.4,
+  "textEditSeconds": 306,
+  "restoreSeconds": 13.9,
+  "unchangedCaches": {
+    "audio": true,
+    "video": true
+  },
+  "textEditCaches": {
+    "audio": true,
+    "video": false
+  },
+  "qc": "PASS each",
+  "paidApiCalls": 0
+}
