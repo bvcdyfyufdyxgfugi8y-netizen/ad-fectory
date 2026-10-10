@@ -1,0 +1,87 @@
+{
+  "id": "demo-reference-001",
+  "client": {
+    "name": "Fictional demo client",
+    "brand": "MINT",
+    "handle": "@mint.demo"
+  },
+  "product": {
+    "name": "MINT Bottle",
+    "category": "Travel bottle",
+    "features": [
+      "500 ml capacity"
+    ],
+    "images": [
+      "assets/bottle.svg"
+    ]
+  },
+  "brand": {
+    "logo": "assets/logo.svg",
+    "colors": {
+      "primary": "#61E2C2",
+      "secondary": "#205A63",
+      "accent": "#A3F2DC",
+      "background": "#0B2025",
+      "text": "#F0FFFB"
+    }
+  },
+  "audience": "People carrying drinks on the go",
+  "language": "en",
+  "goal": "launch",
+  "tone": "fast",
+  "durationSec": 10,
+  "cta": "Explore MINT",
+  "hashtags": [
+    "MINT",
+    "TravelBottle"
+  ],
+  "voiceover": {
+    "mode": "none"
+  },
+  "engine": {
+    "template": "bold-commercial",
+    "bpm": 120,
+    "layout": {
+      "type": {
+        "cta": 70
+      }
+    },
+    "animation": {
+      "transitionFrames": 12,
+      "floatAmplitude": 6
+    },
+    "cameras": {
+      "reveal": {
+        "from": {
+          "scale": 1,
+          "y": 0,
+          "rotateY": -2
+        },
+        "to": {
+          "scale": 1.04,
+          "y": -12,
+          "rotateY": 2
+        },
+        "endFrame": 50,
+        "easing": "cubic-in-out"
+      }
+    },
+    "audio": {
+      "musicGainDb": -2,
+      "sfxGainDb": -3
+    },
+    "export": {
+      "crf": 19
+    },
+    "motionPreset": {
+      "name": "poster-stack-depth",
+      "applyTo": [
+        "reveal",
+        "benefit"
+      ],
+      "settleFrames": 24,
+      "offset": 36,
+      "tiltDegrees": 4
+    }
+  }
+}

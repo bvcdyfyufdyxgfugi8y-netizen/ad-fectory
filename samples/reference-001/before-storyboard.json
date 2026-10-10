@@ -1,0 +1,225 @@
+{
+  "id": "demo-reference-001-v1",
+  "briefId": "demo-reference-001",
+  "template": "bold-commercial",
+  "engine": {
+    "template": "bold-commercial",
+    "cameras": {
+      "reveal": {
+        "from": {
+          "x": 0,
+          "y": 0,
+          "scale": 1,
+          "rotateX": 0,
+          "rotateY": -2,
+          "rotateZ": 0
+        },
+        "to": {
+          "x": 0,
+          "y": -12,
+          "scale": 1.04,
+          "rotateX": 0,
+          "rotateY": 2,
+          "rotateZ": 0
+        },
+        "startFrame": 0,
+        "endFrame": 50,
+        "easing": "cubic-in-out",
+        "perspective": 1200
+      }
+    },
+    "bpm": 120,
+    "layout": {
+      "safe": {
+        "top": 230,
+        "bottom": 430,
+        "side": 90
+      },
+      "type": {
+        "hook": 128,
+        "reveal": 104,
+        "benefit": 78,
+        "offer": 210,
+        "cta": 70
+      },
+      "product": {
+        "reveal": 900,
+        "benefit": 760,
+        "cta": 700
+      }
+    },
+    "animation": {
+      "transitionFrames": 12,
+      "kineticSpring": {
+        "damping": 14,
+        "stiffness": 170,
+        "mass": 0.7
+      },
+      "floatAmplitude": 6,
+      "floatPeriod": 18
+    },
+    "audio": {
+      "musicGainDb": -2,
+      "sfxGainDb": -3,
+      "targetLufs": -14,
+      "truePeakDb": -1.5
+    },
+    "export": {
+      "codec": "h264",
+      "pixelFormat": "yuv420p",
+      "colorSpace": "bt709",
+      "crf": 19,
+      "jpegQuality": 92,
+      "audioBitrateK": 192,
+      "sampleRate": 48000
+    }
+  },
+  "strategy": "product-reveal",
+  "language": "en",
+  "direction": "ltr",
+  "fps": 30,
+  "width": 1080,
+  "height": 1920,
+  "bpm": 120,
+  "durationInFrames": 300,
+  "hooks": [
+    "Looking for Travel bottle?",
+    "Meet MINT Bottle",
+    "MINT presents MINT Bottle"
+  ],
+  "selectedHook": 1,
+  "brand": {
+    "name": "MINT",
+    "handle": "@mint.demo",
+    "logo": "assets/logo.svg",
+    "colors": {
+      "primary": "#61E2C2",
+      "secondary": "#205A63",
+      "accent": "#A3F2DC",
+      "background": "#0B2025",
+      "text": "#F0FFFB"
+    }
+  },
+  "scenes": [
+    {
+      "id": "s1-hook",
+      "kind": "hook",
+      "durationInFrames": 75,
+      "headline": "Meet MINT Bottle",
+      "source": [
+        "product.name",
+        "template"
+      ],
+      "motion": "kinetic-pop",
+      "transition": "none",
+      "emphasis": []
+    },
+    {
+      "id": "s2-reveal",
+      "kind": "reveal",
+      "durationInFrames": 75,
+      "headline": "MINT Bottle",
+      "sub": "Travel bottle",
+      "source": [
+        "product.name",
+        "product.category"
+      ],
+      "image": "assets/bottle.svg",
+      "camera": {
+        "from": {
+          "x": 0,
+          "y": 0,
+          "scale": 1,
+          "rotateX": 0,
+          "rotateY": -2,
+          "rotateZ": 0
+        },
+        "to": {
+          "x": 0,
+          "y": -12,
+          "scale": 1.04,
+          "rotateX": 0,
+          "rotateY": 2,
+          "rotateZ": 0
+        },
+        "startFrame": 0,
+        "endFrame": 50,
+        "easing": "cubic-in-out",
+        "perspective": 1200
+      },
+      "motion": "mask-reveal",
+      "transition": "wipe",
+      "emphasis": []
+    },
+    {
+      "id": "s3-benefit",
+      "kind": "benefit",
+      "durationInFrames": 75,
+      "headline": "500 ml capacity",
+      "sub": "01",
+      "source": [
+        "product.features[0]"
+      ],
+      "image": "assets/bottle.svg",
+      "motion": "slide-card",
+      "transition": "slide-up",
+      "emphasis": []
+    },
+    {
+      "id": "s4-cta",
+      "kind": "cta",
+      "durationInFrames": 75,
+      "headline": "Explore MINT",
+      "sub": "@mint.demo",
+      "source": [
+        "cta",
+        "client.handle"
+      ],
+      "image": "assets/bottle.svg",
+      "motion": "pulse",
+      "transition": "wipe",
+      "emphasis": []
+    }
+  ],
+  "audio": {
+    "musicSeed": 78304,
+    "sfx": [
+      {
+        "frame": 4,
+        "sound": "pop",
+        "gainDb": -10
+      },
+      {
+        "frame": 63,
+        "sound": "whoosh",
+        "gainDb": -9
+      },
+      {
+        "frame": 65,
+        "sound": "impact",
+        "gainDb": -6
+      },
+      {
+        "frame": 138,
+        "sound": "whoosh",
+        "gainDb": -9
+      },
+      {
+        "frame": 150,
+        "sound": "tick",
+        "gainDb": -12
+      },
+      {
+        "frame": 195,
+        "sound": "riser",
+        "gainDb": -12
+      },
+      {
+        "frame": 213,
+        "sound": "whoosh",
+        "gainDb": -9
+      }
+    ]
+  },
+  "approved": false
+}

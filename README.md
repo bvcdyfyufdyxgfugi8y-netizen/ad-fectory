@@ -126,3 +126,10 @@ npm run produce -- briefs/demo-mint/brief.json
 
 Two fictional products, one engine, no animation source edits. Full decoded regression evidence lives in
 `samples/engine-regression/`; the historical handoff remains untouched in `samples/phase-1/`.
+
+
+## Reference 001 experiment (review branch)
+The confirmed cartoon contact sheet and reviewed provenance are in `references/reference-001/`.
+The supplied montage analysis conflicts with it; read `verification.md` for actual observations.
+One optional JSON preset is documented in [reference-learning guide](docs/reference-learning-001.md).
+It uses existing fictional product art and does not reproduce reference characters or footage.

@@ -1,0 +1,14 @@
+{
+  "reference_id": "adfactory-003",
+  "source_file": "1137893752099073286.mp4",
+  "duration_seconds": 4.436,
+  "fps": 29.97002997,
+  "width": 736,
+  "height": 414,
+  "analysis_resolution": "sampled visual frames; approximate timings",
+  "shots": [
+    {"start":0,"end":1.65,"visual":"READY oversized lettering and independent moving tilted lime foreground shape","techniques":["headline-card-occlusion","typography-layering"],"camera":"no demonstrated physical 3D camera"},
+    {"start":1.65,"end":3.15,"visual":"composition reset to GO, shape choreography","techniques":["impact-word-switch","shape-wipe"],"camera":"2D transforms sufficient"},
+    {"start":3.15,"end":4.436,"visual":"hard palette switch to pink and multi-object grid reveal","techniques":["palette-hard-reset","single-to-many-grid"],"camera":"not demonstrated"}
+  ]
+}

@@ -23,7 +23,8 @@
     "build": "next build --webpack",
     "start": "tsx src/server/start.ts --production",
     "worker": "tsx src/server/worker.ts",
-    "test:ui": "playwright test"
+    "test:ui": "playwright test",
+    "references": "tsx src/cli/references.ts"
   },
   "dependencies": {
     "@fontsource-variable/alexandria": "5.3.0",
@@ -33,6 +34,7 @@
     "@remotion/renderer": "4.0.529",
     "@remotion/transitions": "4.0.529",
     "@tailwindcss/postcss": "4.3.3",
+    "gsap": "3.15.0",
     "next": "16.4.0",
     "react": "19.3.0",
     "react-dom": "19.3.0",

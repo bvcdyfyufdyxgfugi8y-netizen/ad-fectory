@@ -1,0 +1,107 @@
+{
+  "version": 1,
+  "id": "reference-001",
+  "source": {
+    "filename": "-1277490435562618230.mp4",
+    "sha256": "994cc445e0d7d03abe0580b095d86245f5c729b5fe4795d13fad6c912feb96d5",
+    "availability": "missing",
+    "hashVerification": "reported-only",
+    "reportedDurationSeconds": 61.5,
+    "reportedWidth": 512,
+    "reportedHeight": 910,
+    "reportedFps": 30
+  },
+  "license": {
+    "status": "unknown",
+    "usage": "reference-only",
+    "attribution": "User-supplied reference package; original rights holder unidentified"
+  },
+  "provenance": {
+    "archiveFilename": "ad-fectory-reference-001.zip",
+    "archiveSha256": "44cd92d34156f808a63f6dbb56a76673a7e91fcb20d3ea7cf8581c9ac8a9c3a6",
+    "importedOn": "2026-10-10",
+    "repository": "bvcdyfyufdyxgfugi8y-netizen/ad-fectory"
+  },
+  "artifacts": [
+    {
+      "role": "analysis",
+      "file": "creative-analysis.md",
+      "sha256": "7cad31be4a14b2acab6feece6fe35877a35fef652c5d7428333324c1c47808f4"
+    },
+    {
+      "role": "contact-sheet",
+      "file": "contact-sheet.jpg",
+      "sha256": "a6d3c8510a6a5f541d81537deb4a420a5ffb232a87abb1f77168c28259b78d89"
+    },
+    {
+      "role": "index",
+      "file": "reference-index.json",
+      "sha256": "db08816807e0c2e6f792c556ff187c16aeacbfe9576d44aea541825fb51039a2"
+    },
+    {
+      "role": "task",
+      "file": "codex-task.md",
+      "sha256": "b4498eda90bc46c448c243a165c392a1fa67388588144b4f9261843538db1ca4"
+    }
+  ],
+  "analysis": {
+    "status": "conflicting-evidence",
+    "confidence": 0.2,
+    "observations": [
+      {
+        "startSeconds": 0,
+        "endSeconds": 18,
+        "statement": "Sample labels 00–17 show outlined cartoon characters in purple/green/yellow scenes and tighter crops, not advertising/interface cards. Crop differences are visible; continuous camera motion is not measurable from stills.",
+        "status": "observed",
+        "confidence": 0.95,
+        "evidence": "contact-sheet"
+      },
+      {
+        "startSeconds": 19,
+        "endSeconds": 30,
+        "statement": "Sample labels 19–29 show a red stomach diagram with Arabic callouts. No poster stack or interface montage is visible in these samples.",
+        "status": "observed",
+        "confidence": 0.95,
+        "evidence": "contact-sheet"
+      },
+      {
+        "startSeconds": 31,
+        "endSeconds": 61.5,
+        "statement": "Later labeled samples return to cartoon characters, anatomy and Arabic labels. Exact source timestamps and completeness remain unverified.",
+        "status": "observed",
+        "confidence": 0.9,
+        "evidence": "contact-sheet"
+      },
+      {
+        "startSeconds": 0,
+        "endSeconds": 61.5,
+        "statement": "Supplied multi-style advertising montage classification conflicts with the supplied contact sheet.",
+        "status": "conflicting",
+        "confidence": 0.95,
+        "evidence": "contact-sheet"
+      },
+      {
+        "startSeconds": 18,
+        "endSeconds": 42,
+        "statement": "poster-stack-depth and grid-to-hero are independent proposals; neither is confirmed by supplied sampled images.",
+        "status": "hypothesized",
+        "confidence": 0.1,
+        "evidence": "supplied-analysis"
+      }
+    ],
+    "proposedPresets": [
+      "editorial-type-focus",
+      "poster-stack-depth",
+      "grid-to-hero",
+      "collage-mask-reveal",
+      "contrast-cut-reset"
+    ],
+    "warnings": [
+      "Original MP4 unavailable; its hash, metadata and audio were not independently verified.",
+      "Contact sheet timestamps are supplied labels, not decoded source timestamps.",
+      "Preserve original analysis as supplied; use verification.md and this record for reviewed findings.",
+      "POC is a general layered-card technique, not a recreation of this reference.",
+      "Owner confirmed the cartoon contact sheet is the intended reference on 2026-10-10."
+    ]
+  }
+}

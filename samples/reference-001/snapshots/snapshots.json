@@ -1,0 +1,28 @@
+{
+  "status": "PASS",
+  "frames": [
+    69,
+    103,
+    178
+  ],
+  "passes": 2,
+  "freshBundles": 2,
+  "snapshots": [
+    {
+      "frame": 69,
+      "sha256": "ef97f428a179bdd469d18dc9ea8dc3606ebcdb26c5bf54145665c772721952ad",
+      "file": "frame-69.png"
+    },
+    {
+      "frame": 103,
+      "sha256": "44f0756c8e71716f0996aef57ee84c34e3c9992e4693723bc1b6b4ab0ec16ead",
+      "file": "frame-103.png"
+    },
+    {
+      "frame": 178,
+      "sha256": "17027a510189ba3274f762f6de84ea94e4a0bc6189e3645b9d9d1752f47cd7b1",
+      "file": "frame-178.png"
+    }
+  ],
+  "scope": "Same-environment deterministic PNG regression baselines, not reference-video equivalence"
+}

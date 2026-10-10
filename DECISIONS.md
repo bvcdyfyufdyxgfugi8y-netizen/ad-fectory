@@ -75,3 +75,26 @@ registration and verification. CSS perspective supports planar camera effects; r
 Keep the original handoff video untouched and copy the latest working render before refactoring. Compare every
 decoded video frame with timing and decoded PCM audio, after forcing a new picture render through changed
 implementation hashes. Historical environments may differ, so identify the exact baseline in the report.
+
+
+**D-016 · 2026-10-10 · References distinguish observed frames from supplied interpretations.**
+The owner confirmed the cartoon contact sheet as Reference 001. Its accompanying advertising-montage
+analysis conflicts with those images and is preserved only for provenance. The source MP4 is missing;
+its hash/metadata remain reported. Reference media remain isolated from production assets. A generic
+poster-stack-depth proposal is experimental and not represented as an observed source technique.
+
+**D-017 · 2026-10-10 · Opt-in scene preset on an independent review branch.**
+Extend the existing Bold template with an optional motionPreset in structured configuration. No preset
+default is added; missing configuration uses the original scene components. Shared transition/camera/audio
+clocks remain unchanged. Only reveal/benefit scenes are eligible and all planes must settle within their
+scene. Keep main untouched and open a PR; merging requires owner approval.
+
+
+**D-018 · 2026-10-10 · Owner-requested GSAP installation and image-only reference memory.**
+Install GSAP 3.15.0 with exact lockfile pinning and its no-charge license. Existing transforms/parallax
+remain deterministic frame primitives. Future GSAP integration must pause/seek by frame, not play timers.
+The owner requested Reference 003 ingestion for creative memory and images only; halt the running demo
+comparison and create no further videos. The confirmed product-grid footage contradicts supplied
+READY/GO analysis. Track review images/reports, store source video in ignored local output, and expose
+evidence-linked retrieval without modifying the default creative director. Review branch is now
+`codex/reference-learning-003`; no automatic merge.

@@ -33,3 +33,11 @@ Rule: no paid call without the owner's approval. `PAID_BUDGET_USD_PER_AD=0` (def
 No new dependencies, paid API calls, publishing or deployment. Paid spend $0. Full CLI e2e: 336.6 s first,
 16.4 s cached, 306.0 s text edit, 13.9 s restored. Additional product uses local original SVGs and synth audio.
 MINT: first export 148.6 s; corrected artwork re-export 121.5 s, picture rebuilt / audio cached. Both QC PASS.
+
+
+## Reference 001 experiment — 2026-10-10
+Paid API calls 0; spend $0; new dependencies 0. Only local rendering and supplied-reference inspection.
+No deployment or paid generation. Review branch/PR delivery is authorized by the supplied task.
+
+GSAP 3.15.0 was subsequently installed on the owner's explicit request, under its standard no-charge
+license. One new dependency; no paid calls or spend. Reference 003 delivery consists of images and data.

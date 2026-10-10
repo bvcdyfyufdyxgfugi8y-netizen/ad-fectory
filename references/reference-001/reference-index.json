@@ -1,0 +1,15 @@
+{
+  "reference_id": "reference-001",
+  "source_filename": "-1277490435562618230.mp4",
+  "sha256": "994cc445e0d7d03abe0580b095d86245f5c729b5fe4795d13fad6c912feb96d5",
+  "duration_seconds": 61.5,
+  "width": 512,
+  "height": 910,
+  "fps": 30,
+  "kind": "multi-style-showreel",
+  "creative_analysis": "creative-analysis.md",
+  "contact_sheet": "contact-sheet.jpg",
+  "license": "unknown-reference-only",
+  "status": "ANALYZED_NOT_IMPLEMENTED",
+  "proposed_presets": ["editorial-type-focus", "poster-stack-depth", "grid-to-hero", "collage-mask-reveal", "contrast-cut-reset"]
+}

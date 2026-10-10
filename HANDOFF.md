@@ -1,5 +1,11 @@
 # AD Factory — handoff (for Codex or any new agent)
 
+## Reference memory review branch
+`codex/reference-learning-003` adds Reference 001/003 evidence-linked memory, optional poster-stack POC
+and owner-requested GSAP 3.15.0. Latest user instruction: images only, no further videos. Main is unchanged.
+Read `references/README.md` and `docs/reports/reference-learning-results.md`; supplied analyses conflict
+with actual images. Reference 003 source is local/untracked. PR requires owner approval before merge.
+
 ## Scalable engine extension — v0.3.0
 
 Read `docs/reports/phase-2-engine-results.md`, `docs/engine-audit-plan.md` and `docs/engine-inputs.md` for the latest requested engine work. Optional validated settings, shared timeline/registry and reusable motion extend the existing studio. The current engine regression reference is `samples/engine-regression/`; the historical original remains untouched. Exact pixel equivalence is not claimed.

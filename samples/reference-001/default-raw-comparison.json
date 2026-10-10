@@ -1,0 +1,31 @@
+{
+  "frames": [
+    {
+      "frame": 173,
+      "beforeSha256": "65b1c18e38f284cc073be4cf5f732df2238f5245a45059bace7d49cd8da4b046",
+      "afterSha256": "65b1c18e38f284cc073be4cf5f732df2238f5245a45059bace7d49cd8da4b046",
+      "equal": true
+    },
+    {
+      "frame": 178,
+      "beforeSha256": "a343ef3ad691fb85fe4c3fb3508b153187041b996389eee1d33e0872d0927752",
+      "afterSha256": "a343ef3ad691fb85fe4c3fb3508b153187041b996389eee1d33e0872d0927752",
+      "equal": true
+    },
+    {
+      "frame": 220,
+      "beforeSha256": "be531e98dab7f5f16547da4e716f2827a1eb8fae60d2acc0ea40f047b4398719",
+      "afterSha256": "be531e98dab7f5f16547da4e716f2827a1eb8fae60d2acc0ea40f047b4398719",
+      "equal": true
+    },
+    {
+      "frame": 260,
+      "beforeSha256": "e7ef7086740b053796bccb021c062d91d1ceb140448b4d43109dc20246364501",
+      "afterSha256": "e7ef7086740b053796bccb021c062d91d1ceb140448b4d43109dc20246364501",
+      "equal": true
+    }
+  ],
+  "allSampledFramesEqual": true,
+  "scope": "Four sampled native PNGs before encoding; not all 300 raw frames",
+  "baselineCommit": "4c4f80b"
+}
