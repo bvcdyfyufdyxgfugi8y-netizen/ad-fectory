@@ -42,8 +42,8 @@ async function handle(req: NextRequest, context: Context) {
       if (req.method === "GET") return json(store.list());
       if (req.method === "POST") {
         const { brief: demo } = loadBrief(path.join(ROOT, "briefs/demo-nafas/brief.json"));
-        const brief = { ...demo, id: `project-${randomUUID()}` };
-        const p = store.create(brief, plan(brief));
+        const brief = BriefSchema.parse({ ...demo, id: `project-${randomUUID()}`, creative: { mode: "adaptive" } });
+        const p = store.create(brief, plan(brief, path.join(ROOT, "briefs/demo-nafas")));
         fs.cpSync(path.join(ROOT, "briefs/demo-nafas/assets"), path.join(store.projectDir(p.id), "assets"), { recursive: true });
         return json(p, 201);
       }
@@ -63,7 +63,7 @@ async function handle(req: NextRequest, context: Context) {
           if (![...brief.product.images, ...(brief.brand.logo ? [brief.brand.logo] : [])].every(a => /^assets\/[a-zA-Z0-9._-]+$/.test(a))) throw new Error("مسار صورة غير صالح");
           brief.approvedCopy = undefined;
           validAssets(brief, dir);
-          return json(store.save(id, revision, brief, plan(brief)));
+          return json(store.save(id, revision, brief, plan(brief, dir)));
         }
         const result = editStoryboard(p.brief, p.storyboard, body.storyboard);
         validAssets(result.brief, dir);

@@ -1,0 +1,76 @@
+{
+  "status": "PASS",
+  "baselineCommit": "1d5de2f468ec0237fda4d98807ee8dc152da6dc0",
+  "regression": [
+    {
+      "frame": 173,
+      "before": "65b1c18e38f284cc073be4cf5f732df2238f5245a45059bace7d49cd8da4b046",
+      "after": "65b1c18e38f284cc073be4cf5f732df2238f5245a45059bace7d49cd8da4b046",
+      "exact": true
+    },
+    {
+      "frame": 178,
+      "before": "a343ef3ad691fb85fe4c3fb3508b153187041b996389eee1d33e0872d0927752",
+      "after": "a343ef3ad691fb85fe4c3fb3508b153187041b996389eee1d33e0872d0927752",
+      "exact": true
+    },
+    {
+      "frame": 220,
+      "before": "be531e98dab7f5f16547da4e716f2827a1eb8fae60d2acc0ea40f047b4398719",
+      "after": "be531e98dab7f5f16547da4e716f2827a1eb8fae60d2acc0ea40f047b4398719",
+      "exact": true
+    },
+    {
+      "frame": 260,
+      "before": "e7ef7086740b053796bccb021c062d91d1ceb140448b4d43109dc20246364501",
+      "after": "e7ef7086740b053796bccb021c062d91d1ceb140448b4d43109dc20246364501",
+      "exact": true
+    }
+  ],
+  "products": [
+    {
+      "product": "نَفَس كولد برو",
+      "selected": [
+        "camera-pan-zoom",
+        "kinetic-typography",
+        "smooth-transition"
+      ],
+      "snapshots": [
+        {
+          "frame": 137,
+          "sha256": "05aa09ed70ae72a7a55b1ba3727ab7c91598fa1c4befc067461db01ea5a5f5b9",
+          "file": "demo-nafas-137.png"
+        },
+        {
+          "frame": 235,
+          "sha256": "1e76396e73f2218da9d564fe59f068c0951c5eab70918404e6e4236774a0db0f",
+          "file": "demo-nafas-235.png"
+        }
+      ],
+      "freshBundles": 2
+    },
+    {
+      "product": "MINT Bottle",
+      "selected": [
+        "camera-pan-zoom",
+        "kinetic-typography",
+        "smooth-transition"
+      ],
+      "snapshots": [
+        {
+          "frame": 106,
+          "sha256": "5f5e2f2d7a0a8e3f74f018f616b429844cc2a645a9994677e0a23b24ad2090b6",
+          "file": "demo-mint-106.png"
+        },
+        {
+          "frame": 181,
+          "sha256": "950e29663d53512358bab43a8cab942937c4739dbd4f0879f038849466ac2fe6",
+          "file": "demo-mint-181.png"
+        }
+      ],
+      "freshBundles": 2
+    }
+  ],
+  "scope": "Selected native PNG frames only; no whole-video, motion continuity or audio-export equivalence claimed",
+  "videoExports": 0
+}

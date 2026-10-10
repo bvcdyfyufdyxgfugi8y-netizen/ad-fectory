@@ -4,6 +4,8 @@
 import { z } from "zod";
 import { EngineConfigSchema, CameraSchema } from "../engine/config.ts";
 
+import { CreativeOptionsSchema, DirectionReportSchema } from "../creative/contracts.ts";
+
 const hexColor = z.string().regex(/^#[0-9a-fA-F]{6}$/, "colour must be #RRGGBB");
 // Asset paths are relative to the brief file. No URLs, no absolute paths, no "..": the job folder is the sandbox.
 const assetPath = z
@@ -43,6 +45,7 @@ export const VisualAssetSchema = assetPath;
 export const TextSchema = z.string().min(1).max(120);
 
 export const BriefSchema = z.object({
+  creative: CreativeOptionsSchema.optional(),
   engine: EngineConfigSchema.optional(),
   id: z.string().regex(/^[a-z0-9-]{3,48}$/, "id: 3-48 chars, lowercase letters, digits, dashes"),
   client: z.object({
@@ -109,6 +112,7 @@ export const SfxCue = z.object({
 });
 
 export const StoryboardSchema = z.object({
+  creativeDirection: DirectionReportSchema.optional(),
   id: z.string(),
   briefId: z.string(),
   template: z.string().regex(/^[a-z][a-z0-9-]+$/),

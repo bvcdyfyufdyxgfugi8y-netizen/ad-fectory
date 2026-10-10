@@ -51,7 +51,7 @@
       {
         "startSeconds": 0,
         "endSeconds": 18,
-        "statement": "Sample labels 00–17 show outlined cartoon characters in purple/green/yellow scenes and tighter crops, not advertising/interface cards. Crop differences are visible; continuous camera motion is not measurable from stills.",
+        "statement": "Sample labels 00\u201317 show outlined cartoon characters in purple/green/yellow scenes and tighter crops, not advertising/interface cards. Crop differences are visible; continuous camera motion is not measurable from stills.",
         "status": "observed",
         "confidence": 0.95,
         "evidence": "contact-sheet"
@@ -59,7 +59,7 @@
       {
         "startSeconds": 19,
         "endSeconds": 30,
-        "statement": "Sample labels 19–29 show a red stomach diagram with Arabic callouts. No poster stack or interface montage is visible in these samples.",
+        "statement": "Sample labels 19\u201329 show a red stomach diagram with Arabic callouts. No poster stack or interface montage is visible in these samples.",
         "status": "observed",
         "confidence": 0.95,
         "evidence": "contact-sheet"
@@ -102,6 +102,26 @@
       "Preserve original analysis as supplied; use verification.md and this record for reviewed findings.",
       "POC is a general layered-card technique, not a recreation of this reference.",
       "Owner confirmed the cartoon contact sheet is the intended reference on 2026-10-10."
+    ],
+    "domains": [
+      {
+        "domain": "composition",
+        "observationIndices": [
+          0,
+          1,
+          2
+        ],
+        "status": "observed",
+        "note": "Classification of existing reviewed visual observations; no new timing/audio inference."
+      },
+      {
+        "domain": "lighting-color",
+        "observationIndices": [
+          1
+        ],
+        "status": "observed",
+        "note": "Observed static red diagram color only; lighting and temporal color rhythm remain unmeasured."
+      }
     ]
   }
 }

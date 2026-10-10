@@ -1,0 +1,270 @@
+{
+  "version": 1,
+  "id": "reference-004",
+  "source": {
+    "filename": "8000004824875229154.mp4",
+    "sha256": "e1092eeedeb3598596b3ff46630b1641485f2f493e28cbf249fec78eb04eee40",
+    "availability": "local-untracked",
+    "hashVerification": "verified",
+    "verificationReport": "source-verification.json",
+    "reportedDurationSeconds": 9.833991,
+    "reportedWidth": 736,
+    "reportedHeight": 414,
+    "reportedFps": 24,
+    "measuredDurationSeconds": 9.833991,
+    "measuredVideoDurationSeconds": 9.833333333333334,
+    "measuredWidth": 736,
+    "measuredHeight": 414,
+    "measuredFps": 24
+  },
+  "license": {
+    "status": "unknown",
+    "usage": "reference-only",
+    "attribution": "User-supplied PUZZLE graphic-motion reference; original word/illustrations remain reference-only"
+  },
+  "provenance": {
+    "archiveFilename": "8000004824875229154.mp4",
+    "archiveSha256": "e1092eeedeb3598596b3ff46630b1641485f2f493e28cbf249fec78eb04eee40",
+    "importedOn": "2026-10-10",
+    "repository": "bvcdyfyufdyxgfugi8y-netizen/ad-fectory"
+  },
+  "artifacts": [
+    {
+      "role": "analysis",
+      "file": "analysis.md",
+      "sha256": "c23c766fe5640b919e59ba94c1d2982f6a0d4b354555ad1075a5220ee5415dbf"
+    },
+    {
+      "role": "contact-sheet",
+      "file": "contact-sheet.jpg",
+      "sha256": "576541ed10f91894dece5fd5922fc51db3411a66b8aea1054224165389ad7f3c"
+    },
+    {
+      "role": "contact-sheet",
+      "file": "all-frames-000-117.jpg",
+      "sha256": "63e61833bafd49c16d4d190a1d017aa54eb1d454171752b607c17fa94f8e64f5"
+    },
+    {
+      "role": "contact-sheet",
+      "file": "all-frames-118-235.jpg",
+      "sha256": "60301f1cada9fc399519fccdfcf1615efd3c7ee39f484a390f5954ae5763c69f"
+    },
+    {
+      "role": "verification",
+      "file": "source-verification.json",
+      "sha256": "356223a294cc95e7aab95b994bd26f6c545c3e42a59d083ccded37471d45b1cb"
+    },
+    {
+      "role": "verification",
+      "file": "audio-analysis.json",
+      "sha256": "d200c5e1a7c60170fbdd5080b01ecc45650150cc044b2d9f5ae59842702c0cd2"
+    },
+    {
+      "role": "frame-sample",
+      "file": "frames/sample-01.png",
+      "sha256": "c817aa5fca201abcab38365b6c31b990a8b165332376a808ec7cd3761a78aad7"
+    },
+    {
+      "role": "frame-sample",
+      "file": "frames/sample-02.png",
+      "sha256": "37475cde49c42bff93a2dc9e6836880908fed4663895481b04a6b8a9aaa428ac"
+    },
+    {
+      "role": "frame-sample",
+      "file": "frames/sample-03.png",
+      "sha256": "62165dcb97a049c9b4d9395c93c5a60c90128e09fbd9168ad694fdafcff39fac"
+    },
+    {
+      "role": "frame-sample",
+      "file": "frames/sample-04.png",
+      "sha256": "6a3a65c66ec14e20e21a50a2c6b3e4e17882d7314f6c5a8c9c5020d4c90abcd2"
+    },
+    {
+      "role": "frame-sample",
+      "file": "frames/sample-05.png",
+      "sha256": "480282b711a8522aa1505c4ce40e6301f3bb4c05e7b8a6124e6c7874f08d61f9"
+    },
+    {
+      "role": "frame-sample",
+      "file": "frames/sample-06.png",
+      "sha256": "462d5c0c1abb108ed9e95cab604531043a2c8b7888301d9d7e3565616be3594e"
+    }
+  ],
+  "analysis": {
+    "status": "reviewed",
+    "confidence": 0.9,
+    "observations": [
+      {
+        "startSeconds": 0,
+        "endSeconds": 1.75,
+        "statement": "Flat illustrated colored pieces enter at different visible times against black negative space.",
+        "status": "observed",
+        "confidence": 0.95,
+        "evidence": "source-video"
+      },
+      {
+        "startSeconds": 1.75,
+        "endSeconds": 2.5,
+        "statement": "Pieces converge/rotate into a white-backed central cluster and settle into a square arrangement.",
+        "status": "observed",
+        "confidence": 0.95,
+        "evidence": "source-video"
+      },
+      {
+        "startSeconds": 2.5,
+        "endSeconds": 3.3333333333333335,
+        "statement": "The contained cluster spreads into peripheral graphics while a title becomes visible centrally.",
+        "status": "observed",
+        "confidence": 0.95,
+        "evidence": "source-video"
+      },
+      {
+        "startSeconds": 3.3333333333333335,
+        "endSeconds": 5.333333333333333,
+        "statement": "Individual title letters change scale, angle and position toward a larger readable outlined word.",
+        "status": "observed",
+        "confidence": 0.95,
+        "evidence": "source-video"
+      },
+      {
+        "startSeconds": 5.333333333333333,
+        "endSeconds": 9.833333333333334,
+        "statement": "The main title stays dominant while secondary stickers, pieces and colored bars remain active.",
+        "status": "observed",
+        "confidence": 0.95,
+        "evidence": "source-video"
+      },
+      {
+        "startSeconds": 0,
+        "endSeconds": 9.833333333333334,
+        "statement": "Flat outlined graphics with white offset accents and a red/yellow/green/blue palette are visible; true 3D geometry or a physically lit product is not established.",
+        "status": "observed",
+        "confidence": 0.95,
+        "evidence": "source-video"
+      }
+    ],
+    "domains": [
+      {
+        "domain": "composition",
+        "status": "observed",
+        "observationIndices": [
+          0,
+          1,
+          4
+        ],
+        "note": "Negative space, centered assembly and dominant title with peripheral hierarchy."
+      },
+      {
+        "domain": "reveal",
+        "status": "observed",
+        "observationIndices": [
+          1,
+          2
+        ],
+        "note": "Components assemble then redistribute to expose a graphic/title hero."
+      },
+      {
+        "domain": "transitions",
+        "status": "observed",
+        "observationIndices": [
+          2
+        ],
+        "note": "Continuous redistribution; match-cut implementation is unverified."
+      },
+      {
+        "domain": "typography",
+        "status": "observed",
+        "observationIndices": [
+          3,
+          4
+        ],
+        "note": "Independent letter settling and outlined title hierarchy; exact curves unknown."
+      },
+      {
+        "domain": "dimensionality",
+        "status": "observed",
+        "observationIndices": [
+          5
+        ],
+        "note": "Flat layered illustration; true 3D unverified."
+      },
+      {
+        "domain": "lighting-color",
+        "status": "observed",
+        "observationIndices": [
+          5
+        ],
+        "note": "Static palette and contrast observed; physical lighting and temporal color rhythm unmeasured."
+      },
+      {
+        "domain": "storytelling",
+        "status": "observed",
+        "observationIndices": [
+          0,
+          1,
+          2,
+          4
+        ],
+        "note": "Visible separate-to-whole-to-identity order; commercial intent unknown."
+      },
+      {
+        "domain": "attention-persuasion",
+        "status": "hypothesized",
+        "observationIndices": [
+          0,
+          2,
+          4
+        ],
+        "note": "Density and hierarchy may direct attention; no response data."
+      },
+      {
+        "domain": "emotional-pacing",
+        "status": "hypothesized",
+        "observationIndices": [
+          0,
+          2,
+          4
+        ],
+        "note": "Sparse opening and denser reveal suggest pacing, not measured emotion."
+      },
+      {
+        "domain": "camera",
+        "status": "unverified",
+        "observationIndices": [],
+        "note": "No independent camera motion recovered."
+      },
+      {
+        "domain": "easing",
+        "status": "unverified",
+        "observationIndices": [],
+        "note": "No exact interpolation equation or spring parameters measured."
+      },
+      {
+        "domain": "music-sync",
+        "status": "unverified",
+        "observationIndices": [],
+        "note": "Audio envelope reviewed but no beat/BPM or intentional sync verified."
+      },
+      {
+        "domain": "sound-design",
+        "status": "unverified",
+        "observationIndices": [],
+        "note": "Playback unsupported; signal analysis cannot identify music or SFX."
+      },
+      {
+        "domain": "commercial-impact",
+        "status": "unverified",
+        "observationIndices": [],
+        "note": "No campaign/audience response data."
+      }
+    ],
+    "proposedPresets": [],
+    "warnings": [
+      "Provenance archive fields identify the raw MP4 upload; no ZIP archive was supplied.",
+      "Audio playback unsupported: signal analysis only, no BPM/SFX/music identity claims.",
+      "No target product or production brief supplied; reference learning only.",
+      "New assembly/burst/secondary-motion recipes are observed, not implemented or approved.",
+      "Original raw MP4 retained locally in ignored out storage; source hash and reviewed derivative evidence committed."
+    ]
+  }
+}

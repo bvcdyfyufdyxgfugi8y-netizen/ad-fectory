@@ -1,0 +1,17 @@
+{
+  "sourceSha256": "e1092eeedeb3598596b3ff46630b1641485f2f493e28cbf249fec78eb04eee40",
+  "verifiedAtImport": true,
+  "sourceStorage": "Local ignored out/reference-library/reference-004/source.mp4; not distributed",
+  "width": 736,
+  "height": 414,
+  "fpsNumerator": 24,
+  "fpsDenominator": 1,
+  "videoDurationSeconds": 9.833333333333334,
+  "audioDurationSeconds": 9.833991,
+  "videoFrames": 236,
+  "audioCodec": "HE-AACv2",
+  "sampleRate": 44100,
+  "inspection": "All 236 decoded frames in two numbered contact sheets plus native frames 24,50,58,69,108,200",
+  "audioInspection": "Signal-level RMS/envelope review only; playback unsupported, no BPM/SFX identity claims",
+  "newVideoExports": 0
+}

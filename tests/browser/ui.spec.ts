@@ -7,6 +7,8 @@ test("Arabic intake → scene edit → approval persists, assets validate, mobil
   const response = await request.post("/api/projects", { data: {} });
   expect(response.status()).toBe(201);
   const project = await response.json();
+  expect(project.brief.creative.mode).toBe("adaptive");
+  expect(project.storyboard.creativeDirection.targetProduct).toBe(project.brief.product.name);
   await page.goto("/");
   await expect(page.getByRole("heading", { level: 1 })).toHaveText(project.brief.product.name);
   await expect(page.locator("html")).toHaveAttribute("dir", "rtl");
@@ -33,10 +35,10 @@ test("Arabic intake → scene edit → approval persists, assets validate, mobil
   expect(picture!.x).toBeGreaterThanOrEqual(preview!.x);
   expect(picture!.x + picture!.width).toBeLessThanOrEqual(preview!.x + preview!.width);
   await page.evaluate(() => window.scrollTo(0, 0));
-  await page.screenshot({ path: "docs/reports/phase-2-desktop.png", fullPage: true });
+  await page.screenshot({ path: path.join(process.env.AD_FACTORY_SCREENSHOT_DIR ?? "docs/reports", "phase-2-desktop.png"), fullPage: true });
   await page.setViewportSize({ width: 390, height: 844 });
   await page.evaluate(() => window.scrollTo(0, 0));
-  await page.screenshot({ path: "docs/reports/phase-2-mobile.png", fullPage: true });
+  await page.screenshot({ path: path.join(process.env.AD_FACTORY_SCREENSHOT_DIR ?? "docs/reports", "phase-2-mobile.png"), fullPage: true });
   expect(await page.evaluate(() => document.documentElement.scrollWidth <= window.innerWidth)).toBe(true);
   const bad = await request.patch(`/api/projects/${project.id}`, { data: { revision: 1, brief: project.brief } });
   expect(bad.status()).toBe(409);

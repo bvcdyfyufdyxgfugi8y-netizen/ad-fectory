@@ -1,0 +1,63 @@
+{
+  "method": "10ms RMS envelope of decoded 16kHz mono signed-16 PCM; no listening or beat classification",
+  "samples": 157918,
+  "decodedDurationSeconds": 9.869875,
+  "rmsDbFS": -9.815,
+  "candidateEnvelopeRises": [
+    {
+      "timeSeconds": 0.13,
+      "rmsIncrease": 0.22839
+    },
+    {
+      "timeSeconds": 2.5,
+      "rmsIncrease": 0.34337
+    },
+    {
+      "timeSeconds": 2.91,
+      "rmsIncrease": 0.23522
+    },
+    {
+      "timeSeconds": 3.88,
+      "rmsIncrease": 0.23909
+    },
+    {
+      "timeSeconds": 4.21,
+      "rmsIncrease": 0.28991
+    },
+    {
+      "timeSeconds": 5.23,
+      "rmsIncrease": 0.34172
+    },
+    {
+      "timeSeconds": 5.91,
+      "rmsIncrease": 0.27812
+    },
+    {
+      "timeSeconds": 6.94,
+      "rmsIncrease": 0.36351
+    },
+    {
+      "timeSeconds": 7.27,
+      "rmsIncrease": 0.22592
+    },
+    {
+      "timeSeconds": 7.8,
+      "rmsIncrease": 0.34636
+    },
+    {
+      "timeSeconds": 7.96,
+      "rmsIncrease": 0.35948
+    },
+    {
+      "timeSeconds": 8.64,
+      "rmsIncrease": 0.33331
+    }
+  ],
+  "bpm": null,
+  "musicMotionSync": "unverified",
+  "soundDesign": "unverified",
+  "limitations": [
+    "Audio input playback is unavailable in this session; no genre, speech, instrument or SFX claims.",
+    "Mono resampled analysis PCM is not original mastering/loudness QC; candidate envelope rises are not beat times."
+  ]
+}

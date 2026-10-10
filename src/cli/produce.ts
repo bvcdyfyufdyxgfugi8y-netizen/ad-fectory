@@ -12,7 +12,7 @@ import { checkAssets } from "../intake/loadBrief.ts";
 import { ROOT, run } from "../core/exec.ts";
 import { ruleBasedDirector } from "../creative/director.ts";
 import { BriefError, loadBrief } from "../intake/loadBrief.ts";
-import { buildStoryboard } from "../storyboard/build.ts";
+import { planProduction } from "../creative/plan.ts";
 import { buildAudio } from "../audio/mix.ts";
 import { mux, renderCover, renderPicture } from "../render/render.ts";
 import { qcMarkdown, runQc } from "../qc/qc.ts";
@@ -35,8 +35,7 @@ export async function produce(briefFile: string, opts: { stage?: "storyboard" | 
     sb = StoryboardSchema.parse(JSON.parse(fs.readFileSync(opts.storyboardFile, "utf8")));
     log(`using edited storyboard ${opts.storyboardFile}`);
   } else {
-    const draft = ruleBasedDirector.draft(brief);
-    sb = buildStoryboard(brief, draft);
+    sb = planProduction(brief, dir);
   }
   validatePlan(sb, brief);
   const assetIssues = checkAssets({ ...brief, product: { ...brief.product, images: sb.scenes.flatMap(s => s.image ? [s.image] : []) }, brand: { ...brief.brand, logo: sb.brand.logo } }, dir);
@@ -89,7 +88,7 @@ export async function produce(briefFile: string, opts: { stage?: "storyboard" | 
   fs.copyFileSync(path.join(outDir, "qc-report.md"), path.join(deliveryDir, "qc-report.md"));
   lap("delivery", t);
   lap("total", t0);
-  fs.writeFileSync(path.join(outDir, "run.json"), JSON.stringify({ briefId: brief.id, director: ruleBasedDirector.name, final: path.relative(ROOT, final), timings, cached: { audio: audio.cached, video: picture.cached }, paidApiCalls: 0, costUSD: 0 }, null, 2));
+  fs.writeFileSync(path.join(outDir, "run.json"), JSON.stringify({ briefId: brief.id, director: brief.creative ? "adaptive@1" : ruleBasedDirector.name, final: path.relative(ROOT, final), timings, cached: { audio: audio.cached, video: picture.cached }, paidApiCalls: 0, costUSD: 0 }, null, 2));
   log(`done in ${timings.total}s → ${path.relative(process.cwd(), deliveryDir)}/`);
   return { outDir, final, qcPassed: report.passed, timings, cached: { audio: audio.cached, video: picture.cached } };
 }

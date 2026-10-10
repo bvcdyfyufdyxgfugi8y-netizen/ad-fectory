@@ -29,3 +29,7 @@ Owner: makes business decisions and final creative approval. Claude: builds, tes
 - Pipeline entry: `src/cli/produce.ts`
 - Template: `src/remotion/templates/bold-commercial/` (safe area + type rules in `theme.ts`)
 - Skills: `.claude/skills/ad-render/`, `.claude/skills/ad-creative-qa/`
+
+## Product-independent creative policy
+
+Read [.claude/skills/ad-render/SKILL.md](.claude/skills/ad-render/SKILL.md), section 14 (Video Motion Intelligence), before reference intake or new product production. It is the single canonical policy; use the existing registry and production engine. Main merges require explicit owner approval.
