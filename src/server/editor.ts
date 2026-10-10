@@ -1,10 +1,10 @@
 import { BriefSchema, StoryboardSchema, type Brief, type Storyboard } from "../core/schema.ts";
-import { buildStoryboard, readingSeconds } from "../storyboard/build.ts";
+import { readingSeconds } from "../storyboard/build.ts";
 import { settings } from "../engine/config.ts";
-import { soundCues } from "../engine/timeline.ts";
-import { ruleBasedDirector } from "../creative/director.ts";
+import { storyboardTimeline, soundCues } from "../engine/timeline.ts";
+import { planProduction } from "../creative/plan.ts";
 
-export function plan(brief: Brief) { return buildStoryboard(brief, ruleBasedDirector.draft(brief)); }
+export function plan(brief: Brief, briefDir?: string) { return planProduction(brief, briefDir); }
 
 /** Accept only editor-owned fields. Geometry, audio seed, brand identity and scene types remain canonical. */
 export function editStoryboard(brief: Brief, current: Storyboard, input: unknown): { brief: Brief; storyboard: Storyboard } {
@@ -40,6 +40,12 @@ export function editStoryboard(brief: Brief, current: Storyboard, input: unknown
   sb.durationInFrames = sb.scenes.reduce((n, s) => n + s.durationInFrames, 0);
   if (sb.durationInFrames < 300 || sb.durationInFrames > 900) throw new Error("المدة الكلية يجب أن تكون بين 10 و30 ثانية");
   b.durationSec = sb.durationInFrames / sb.fps;
-  sb.audio.sfx = soundCues(sb.scenes, sb.fps, sb.bpm, settings(sb.engine).animation.transitionFrames);
+  sb.audio.sfx = b.creative?.audio === "quiet" ? [] : soundCues(sb.scenes, sb.fps, sb.bpm, settings(sb.engine).animation.transitionFrames);
+  if (sb.creativeDirection) {
+    sb.creativeDirection.bindings = storyboardTimeline(sb).map(({ scene, from, duration }) => {
+      const binding = sb.creativeDirection!.bindings.find(s => s.sceneId === scene.id)!;
+      return { ...binding, asset: scene.image, durationInFrames: scene.durationInFrames, brandColors: sb.brand.colors, transition: scene.transition, audioCues: sb.audio.sfx.filter(c => c.frame >= from && c.frame < from + duration).map(c => ({ frame: c.frame, sound: c.sound })) };
+    });
+  }
   return { brief: BriefSchema.parse(b), storyboard: StoryboardSchema.parse(sb) };
 }

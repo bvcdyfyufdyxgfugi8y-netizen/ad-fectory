@@ -92,3 +92,9 @@ npm run studio                                      # Remotion Studio (live prev
 
 ## Original next step
 Phase 2 was approved by the owner and built in this handoff; see the update above and current `PROGRESS.md`.
+
+## Product-independent creative learning (2026-10-10, review branch only)
+
+Extended the existing ad-render skill as the Video Motion Intelligence entry point and linked it from Codex instructions. Added canonical technique lifecycle/aliases/evidence and feedback to the existing memory, validated target profiles and 14-domain coverage, explicit reference/product routing, seven-factor adaptive selection, and shared CLI/server planning. New UI projects opt in; saved legacy projects remain on their prior path. See `docs/product-independent-learning.md` and `docs/reports/product-independent-learning-results.md` for contracts, evidence and limitations.
+
+62 tests/typecheck/lint and the Arabic editing/approval/mobile browser test pass. Four legacy PNG frames exactly match the previous review commit; two adaptive target inputs have deterministic selected-frame PNGs. No new video was exported under the images-only instruction; whole-video/audio export equivalence is unverified. One template and rule-based selection remain; observed reference recipes are not auto-approved. Main is unchanged; no merges without explicit owner approval.

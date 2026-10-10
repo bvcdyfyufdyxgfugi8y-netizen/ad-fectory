@@ -85,5 +85,177 @@
         "Never infer product flavors or claims from the third-party reference."
       ]
     }
-  ]
+  ],
+  "techniques": [
+    {
+      "id": "camera-pan-zoom",
+      "aliases": [],
+      "domain": "camera",
+      "family": "camera",
+      "status": "approved",
+      "executor": "camera",
+      "lessons": [],
+      "testEvidence": [
+        "tests/engine.test.ts",
+        "tests/creative-adaptation.test.ts"
+      ],
+      "requires": [],
+      "tones": [
+        "cinematic",
+        "fast",
+        "funny",
+        "luxury",
+        "informative"
+      ],
+      "guidance": "Transfer the technique with owned product assets, brief colors and readable timing; never transfer reference claims."
+    },
+    {
+      "id": "kinetic-typography",
+      "aliases": [],
+      "domain": "typography",
+      "family": "type",
+      "status": "approved",
+      "executor": "kinetic",
+      "lessons": [],
+      "testEvidence": [
+        "tests/engine.test.ts",
+        "tests/creative-adaptation.test.ts"
+      ],
+      "requires": [],
+      "tones": [
+        "cinematic",
+        "fast",
+        "funny",
+        "luxury",
+        "informative"
+      ],
+      "guidance": "Transfer the technique with owned product assets, brief colors and readable timing; never transfer reference claims."
+    },
+    {
+      "id": "smooth-transition",
+      "aliases": [],
+      "domain": "transitions",
+      "family": "transition",
+      "status": "approved",
+      "executor": "transition",
+      "lessons": [],
+      "testEvidence": [
+        "tests/engine.test.ts",
+        "tests/creative-adaptation.test.ts"
+      ],
+      "requires": [],
+      "tones": [
+        "cinematic",
+        "fast",
+        "funny",
+        "luxury",
+        "informative"
+      ],
+      "guidance": "Transfer the technique with owned product assets, brief colors and readable timing; never transfer reference claims."
+    },
+    {
+      "id": "poster-stack-depth",
+      "aliases": [],
+      "domain": "dimensionality",
+      "family": "depth",
+      "status": "experimental",
+      "executor": "poster-stack",
+      "lessons": [],
+      "testEvidence": [],
+      "requires": [],
+      "tones": [
+        "cinematic",
+        "fast",
+        "funny",
+        "luxury",
+        "informative"
+      ],
+      "guidance": "Transfer the technique with owned product assets, brief colors and readable timing; never transfer reference claims."
+    },
+    {
+      "id": "cartoon-outline-hierarchy",
+      "aliases": [],
+      "domain": "composition",
+      "family": "composition",
+      "status": "observed",
+      "lessons": [
+        "cartoon-outline-hierarchy"
+      ],
+      "testEvidence": [],
+      "requires": [],
+      "tones": [
+        "cinematic",
+        "fast",
+        "funny",
+        "luxury",
+        "informative"
+      ],
+      "guidance": "Transfer the technique with owned product assets, brief colors and readable timing; never transfer reference claims."
+    },
+    {
+      "id": "asymmetric-product-grid",
+      "aliases": [],
+      "domain": "composition",
+      "family": "composition",
+      "status": "observed",
+      "lessons": [
+        "asymmetric-product-grid"
+      ],
+      "testEvidence": [],
+      "requires": [],
+      "tones": [
+        "cinematic",
+        "fast",
+        "funny",
+        "luxury",
+        "informative"
+      ],
+      "guidance": "Transfer the technique with owned product assets, brief colors and readable timing; never transfer reference claims."
+    },
+    {
+      "id": "tile-content-loop",
+      "aliases": [],
+      "domain": "reveal",
+      "family": "composition",
+      "status": "observed",
+      "lessons": [
+        "tile-content-loop"
+      ],
+      "testEvidence": [],
+      "requires": [],
+      "tones": [
+        "cinematic",
+        "fast",
+        "funny",
+        "luxury",
+        "informative"
+      ],
+      "guidance": "Transfer the technique with owned product assets, brief colors and readable timing; never transfer reference claims."
+    },
+    {
+      "id": "variant-in-place",
+      "aliases": [
+        "flavor-color-swap"
+      ],
+      "domain": "lighting-color",
+      "family": "composition",
+      "status": "observed",
+      "lessons": [
+        "flavor-color-swap"
+      ],
+      "testEvidence": [],
+      "requires": [
+        "multiple-assets"
+      ],
+      "tones": [
+        "cinematic",
+        "fast",
+        "funny",
+        "luxury",
+        "informative"
+      ],
+      "guidance": "Transfer the technique with owned product assets, brief colors and readable timing; never transfer reference claims."
+    }
+  ],
+  "feedback": []
 }

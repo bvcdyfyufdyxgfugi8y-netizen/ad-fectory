@@ -132,6 +132,24 @@
       "Footage stored locally only; no production imagery or video redistribution.",
       "No audio listening, BPM inference or synchronization verification performed.",
       "User requested creative-memory ingestion and images only; no Reference 003 animations or videos created."
+    ],
+    "domains": [
+      {
+        "domain": "composition",
+        "observationIndices": [
+          0
+        ],
+        "status": "observed",
+        "note": "Classification of existing reviewed visual observations; no new timing/audio inference."
+      },
+      {
+        "domain": "reveal",
+        "observationIndices": [
+          1
+        ],
+        "status": "observed",
+        "note": "Classification of existing reviewed visual observations; no new timing/audio inference."
+      }
     ]
   }
 }
