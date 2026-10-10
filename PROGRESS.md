@@ -70,3 +70,9 @@ and explicit budget approval. Optional LLM director remains deferred. See `ROADM
 Extended the existing ad-render skill as the Video Motion Intelligence entry point and linked it from Codex instructions. Added canonical technique lifecycle/aliases/evidence and feedback to the existing memory, validated target profiles and 14-domain coverage, explicit reference/product routing, seven-factor adaptive selection, and shared CLI/server planning. New UI projects opt in; saved legacy projects remain on their prior path. See `docs/product-independent-learning.md` and `docs/reports/product-independent-learning-results.md` for contracts, evidence and limitations.
 
 62 tests/typecheck/lint and the Arabic editing/approval/mobile browser test pass. Four legacy PNG frames exactly match the previous review commit; two adaptive target inputs have deterministic selected-frame PNGs. No new video was exported under the images-only instruction; whole-video/audio export equivalence is unverified. One template and rule-based selection remain; observed reference recipes are not auto-approved. Main is unchanged; no merges without explicit owner approval.
+
+## Owner-authorized integration and reference 004 (2026-10-10)
+
+Owner explicitly requested merging all work into main. Added raw-upload reference 004 as learning only: full 236-frame visual review, six native samples, signal-only audio analysis, 14-domain evidence/unknowns and unapproved assembly/burst/secondary-motion recipes. Typography evidence reuses the canonical existing technique; generic approved executors stay available across reference selection. Earlier Toon Studio palette extraction is preserved under `references/toon-studio/` without altering product defaults. See `docs/reports/reference-004-integration.md`.
+
+64 tests/typecheck/lint pass. Merge preparation is authorized; actual merge completion is recorded in the following status update. No new advertisements, paid APIs or deployments were requested.

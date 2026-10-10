@@ -15,6 +15,6 @@ export function planProduction(brief: Brief, briefDir?: string) {
   const lessons = memory.listLessons();
   const known = new Set(lessons.map(l => l.referenceId));
   for (const id of brief.creative?.referenceIds ?? []) if (!known.has(id)) throw new Error(`Unknown reference: ${id}`);
-  const techniques = memory.listTechniques().filter(t => !t.lessons.length || !brief.creative?.referenceIds?.length || t.lessons.some(id => lessons.some(l => l.id === id && brief.creative?.referenceIds?.includes(l.referenceId))));
+  const techniques = memory.listTechniques().filter(t => t.status === "approved" || !t.lessons.length || !brief.creative?.referenceIds?.length || t.lessons.some(id => lessons.some(l => l.id === id && brief.creative?.referenceIds?.includes(l.referenceId))));
   return adaptStoryboard(brief, techniques);
 }

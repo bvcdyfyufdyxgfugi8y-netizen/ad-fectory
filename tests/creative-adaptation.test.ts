@@ -120,3 +120,12 @@ test("CLI/server planning reads owned SVG canvas proportions without inventing p
   assert.equal(b.creative!.profile.assetAspect, undefined);
   assert.throws(() => planProduction(b, os.tmpdir()), /file not found/);
 });
+test("adding reference evidence never removes approved generic executors from another reference selection", () => {
+  const b = adaptive({ referenceIds: ["reference-003"] });
+  const sb = planProduction(b);
+  assert.deepEqual(sb.creativeDirection!.decisions.filter(d => d.selected).map(d => d.techniqueId).sort(), ["camera-pan-zoom", "kinetic-typography", "smooth-transition"]);
+  const four = planProduction(adaptive({ referenceIds: ["reference-004"] }));
+  const picture = (s: typeof sb) => ({ scenes: s.scenes, engine: s.engine, audio: s.audio, brand: s.brand });
+  assert.deepEqual(picture(sb), picture(four));
+  assert.ok(four.creativeDirection!.decisions.filter(d => ["staggered-parts-assembly", "assembly-burst-reveal", "secondary-motion-hold"].includes(d.techniqueId)).every(d => !d.selected));
+});

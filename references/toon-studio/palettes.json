@@ -1,0 +1,147 @@
+{
+  "repository": "https://github.com/bvcdyfyufdyxgfugi8y-netizen/Motion",
+  "branch": "main",
+  "commit": "b6d3b6923b6bc9a8de1252ff0708d0da0ee26297",
+  "status": "Owner-requested palette knowledge preserved in AD Factory references; not applied to product briefs or existing ads",
+  "licenseCheck": {
+    "packageLicense": "UNLICENSED",
+    "scope": "Owner-requested palette reference; no fonts, audio or third-party media imported"
+  },
+  "sources": [
+    ".claude/skills/cartoon/preferences.md",
+    "remotion/mistakestoon/cues.js",
+    "remotion/mistakestoon/Glass.jsx",
+    ".claude/skills/cartoon/assets/template-lilac/cues.js",
+    "remotion/onehero/Toon.jsx",
+    "remotion/twosec/props.jsx"
+  ],
+  "palettes": {
+    "pop": {
+      "colors": {
+        "ivory": "#FFFBF2",
+        "paper": "#F6F0E4",
+        "line": "#ECE6DA",
+        "mid": "#B5AEA2",
+        "dim": "#8A847A",
+        "slate": "#17131C",
+        "ink": "#17131C",
+        "sky": "#4FB3FF",
+        "mint": "#2FD39E",
+        "blush": "#FF7AB6",
+        "butter": "#FFC93C",
+        "orange": "#FF8A3D"
+      },
+      "backgroundStops": [
+        "#FFF3D1",
+        "#FFE3EF",
+        "#E2F1FF",
+        "#DDF8EA"
+      ],
+      "themes": [
+        {
+          "name": "grape",
+          "accent": "#8A5CF6",
+          "accentHi": "#B79CFF",
+          "accentSoft": "#EFE7FF",
+          "dk": "#4B2BB0",
+          "deep": "#3A2190",
+          "mid": "#6C43E0"
+        },
+        {
+          "name": "bubblegum",
+          "accent": "#FF4F9A",
+          "accentHi": "#FF9CC6",
+          "accentSoft": "#FFE4F0",
+          "dk": "#B11A5C",
+          "deep": "#8E1249",
+          "mid": "#E2357F"
+        },
+        {
+          "name": "tangerine",
+          "accent": "#FF7A1A",
+          "accentHi": "#FFB27A",
+          "accentSoft": "#FFEAD9",
+          "dk": "#A84A05",
+          "deep": "#873A03",
+          "mid": "#E86410"
+        },
+        {
+          "name": "emerald",
+          "accent": "#12B886",
+          "accentHi": "#74E0BF",
+          "accentSoft": "#DAF7EE",
+          "dk": "#077256",
+          "deep": "#055C45",
+          "mid": "#0E9C72"
+        },
+        {
+          "name": "sky",
+          "accent": "#2B8CF0",
+          "accentHi": "#88C2FF",
+          "accentSoft": "#E0EFFF",
+          "dk": "#0F56A6",
+          "deep": "#0B4486",
+          "mid": "#1D74D6"
+        },
+        {
+          "name": "coral",
+          "accent": "#F2453D",
+          "accentHi": "#FF9A93",
+          "accentSoft": "#FFE4E1",
+          "dk": "#A51E18",
+          "deep": "#841712",
+          "mid": "#D93128"
+        }
+      ]
+    },
+    "lilac": {
+      "colors": {
+        "ivory": "#FAF9F5",
+        "paper": "#F0EEE6",
+        "line": "#E8E6DC",
+        "mid": "#B0AEA5",
+        "dim": "#8A8880",
+        "slate": "#141413",
+        "orange": "#D97757",
+        "orangeHi": "#EBA283",
+        "blue": "#6A9BCC",
+        "green": "#788C5D",
+        "peach": "#F4C9B4",
+        "accent": "#8B6CF0",
+        "accentHi": "#B9A6FB",
+        "accentSoft": "#E6DEFF",
+        "ink": "#2B2838",
+        "sky": "#A9CDF5",
+        "mint": "#BDE5CF",
+        "blush": "#FFD3DA",
+        "butter": "#FFE7A3"
+      },
+      "backgroundStops": [
+        "#EEE8FF",
+        "#E6F0FC",
+        "#EAF6EF",
+        "#FCEBEF"
+      ]
+    },
+    "onehero": {
+      "background": "#7438F2",
+      "ink": "#17131C",
+      "sun": "#FFC21A",
+      "sky": "#4FB3FF",
+      "mint": "#2FD39E",
+      "grape": "#B79CFF",
+      "pink": "#FF7AB6",
+      "peach": "#FFE2BF",
+      "dk": "#7A4E00",
+      "deep": "#5E3B00",
+      "mid": "#D99A00",
+      "pools": [
+        "#8D5EFA",
+        "#5F25E2",
+        "#9E70FF",
+        "#692DEC",
+        "#814CF6"
+      ]
+    }
+  }
+}

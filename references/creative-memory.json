@@ -8,6 +8,10 @@
     {
       "id": "reference-003",
       "manifest": "reference-003/ingestion.json"
+    },
+    {
+      "id": "reference-004",
+      "manifest": "reference-004/ingestion.json"
     }
   ],
   "lessons": [
@@ -84,6 +88,80 @@
         "No READY/GO word switch or global pink reset is observed in this reference.",
         "Never infer product flavors or claims from the third-party reference."
       ]
+    },
+    {
+      "id": "reference-004-staggered-parts-assembly",
+      "referenceId": "reference-004",
+      "observationIndices": [
+        0,
+        1
+      ],
+      "technique": "staggered-parts-assembly",
+      "confidence": 0.9,
+      "sourceAspect": "16:9",
+      "guidance": [
+        "Stagger owned supporting components before converging them around a fixed anchor; do not imply unsupported product disassembly.",
+        "Reflow composition for the target aspect ratio and use only supplied product/brand facts."
+      ],
+      "limits": [
+        "Exact authored keyframes/easing and audio synchronization remain unmeasured.",
+        "Reference art, word PUZZLE and palette are not production assets; new recipes remain unapproved."
+      ]
+    },
+    {
+      "id": "reference-004-assembly-burst-reveal",
+      "referenceId": "reference-004",
+      "observationIndices": [
+        1,
+        2
+      ],
+      "technique": "assembly-burst-reveal",
+      "confidence": 0.9,
+      "sourceAspect": "16:9",
+      "guidance": [
+        "Redistribute an assembled graphic cluster outward to reveal owned target identity; scale density and paths to the target safe areas.",
+        "Reflow composition for the target aspect ratio and use only supplied product/brand facts."
+      ],
+      "limits": [
+        "Exact authored keyframes/easing and audio synchronization remain unmeasured.",
+        "Reference art, word PUZZLE and palette are not production assets; new recipes remain unapproved."
+      ]
+    },
+    {
+      "id": "reference-004-secondary-motion-hold",
+      "referenceId": "reference-004",
+      "observationIndices": [
+        4
+      ],
+      "technique": "secondary-motion-hold",
+      "confidence": 0.9,
+      "sourceAspect": "16:9",
+      "guidance": [
+        "Keep the hero/title stable and readable while lower-priority owned accents move around it.",
+        "Reflow composition for the target aspect ratio and use only supplied product/brand facts."
+      ],
+      "limits": [
+        "Exact authored keyframes/easing and audio synchronization remain unmeasured.",
+        "Reference art, word PUZZLE and palette are not production assets; new recipes remain unapproved."
+      ]
+    },
+    {
+      "id": "reference-004-kinetic-typography",
+      "referenceId": "reference-004",
+      "observationIndices": [
+        3
+      ],
+      "technique": "kinetic-typography",
+      "confidence": 0.9,
+      "sourceAspect": "16:9",
+      "guidance": [
+        "Use independent letter settling for owned target text; tune intensity/read time to brand, without copying source lettering or asserting exact springs.",
+        "Reflow composition for the target aspect ratio and use only supplied product/brand facts."
+      ],
+      "limits": [
+        "Exact authored keyframes/easing and audio synchronization remain unmeasured.",
+        "Reference art, word PUZZLE and palette are not production assets; new recipes remain unapproved."
+      ]
     }
   ],
   "techniques": [
@@ -116,7 +194,9 @@
       "family": "type",
       "status": "approved",
       "executor": "kinetic",
-      "lessons": [],
+      "lessons": [
+        "reference-004-kinetic-typography"
+      ],
       "testEvidence": [
         "tests/engine.test.ts",
         "tests/creative-adaptation.test.ts"
@@ -255,6 +335,60 @@
         "informative"
       ],
       "guidance": "Transfer the technique with owned product assets, brief colors and readable timing; never transfer reference claims."
+    },
+    {
+      "id": "staggered-parts-assembly",
+      "aliases": [],
+      "domain": "reveal",
+      "family": "composition",
+      "status": "observed",
+      "lessons": [
+        "reference-004-staggered-parts-assembly"
+      ],
+      "testEvidence": [],
+      "requires": [],
+      "tones": [
+        "fast",
+        "funny",
+        "informative"
+      ],
+      "guidance": "Stagger owned supporting components before converging them around a fixed anchor; do not imply unsupported product disassembly."
+    },
+    {
+      "id": "assembly-burst-reveal",
+      "aliases": [],
+      "domain": "transitions",
+      "family": "transition",
+      "status": "observed",
+      "lessons": [
+        "reference-004-assembly-burst-reveal"
+      ],
+      "testEvidence": [],
+      "requires": [],
+      "tones": [
+        "fast",
+        "funny",
+        "informative"
+      ],
+      "guidance": "Redistribute an assembled graphic cluster outward to reveal owned target identity; scale density and paths to the target safe areas."
+    },
+    {
+      "id": "secondary-motion-hold",
+      "aliases": [],
+      "domain": "composition",
+      "family": "composition",
+      "status": "observed",
+      "lessons": [
+        "reference-004-secondary-motion-hold"
+      ],
+      "testEvidence": [],
+      "requires": [],
+      "tones": [
+        "fast",
+        "funny",
+        "informative"
+      ],
+      "guidance": "Keep the hero/title stable and readable while lower-priority owned accents move around it."
     }
   ],
   "feedback": []
