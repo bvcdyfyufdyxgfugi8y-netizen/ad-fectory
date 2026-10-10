@@ -2,6 +2,16 @@
 
 _Last updated: 2026-10-10_
 
+## Reference memory review (not merged)
+References 001/003 are cataloged with checked provenance, original supplied reports and corrected findings.
+GSAP 3.15.0 installed; one optional poster-stack experiment retained. Reference 003 adds four verified
+memory lessons across the library (three product-grid lessons + one cartoon lesson), exposed by a provider
+and `npm run references`. Images only after the owner's latest instruction. Full existing CLI e2e passed;
+three PNG golden snapshots match, four sampled raw default frames match old source exactly. Encoded
+MP4 comparison still differs in 126/300 frames (SSIM 0.998425; decoded audio equal). No exact full visual
+equivalence claimed. See `docs/reports/reference-learning-results.md`. Review branch: `codex/reference-learning-003`.
+
+
 ## Current engine extension (v0.3)
 Validated structured settings, shared motion/timeline/template registry and two-product verification.
 37 tests, production build, Arabic browser acceptance and full CLI e2e pass. Both product exports pass QC;

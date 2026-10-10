@@ -1,0 +1,32 @@
+{
+  "before": "out/reference-001/before.mp4",
+  "after": "out/demo-mint-bottle/delivery/demo-mint-bottle.mp4",
+  "beforeMetadata": {
+    "width": 1080,
+    "height": 1920,
+    "fps": 30,
+    "duration": 10,
+    "vcodec": "h264",
+    "pixfmt": "yuv420p",
+    "acodec": "aac",
+    "sampleRate": 48000,
+    "channels": 2
+  },
+  "afterMetadata": {
+    "width": 1080,
+    "height": 1920,
+    "fps": 30,
+    "duration": 10,
+    "vcodec": "h264",
+    "pixfmt": "yuv420p",
+    "acodec": "aac",
+    "sampleRate": 48000,
+    "channels": 2
+  },
+  "comparedFrames": 300,
+  "afterFrames": 300,
+  "differentFrames": 126,
+  "decodedVideoEqual": false,
+  "decodedAudioEqual": true,
+  "exactDecodedEquivalence": false
+}

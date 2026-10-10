@@ -18,8 +18,17 @@ export const CameraPointSchema = z.object({ x: z.number().min(-1000).max(1000).d
 export const CameraSchema = z.object({ from: CameraPointSchema, to: CameraPointSchema, startFrame: frame.default(0), endFrame: z.number().int().positive(), easing: z.enum(["linear", "cubic-out", "cubic-in-out"]).default("linear"), perspective: z.number().min(300).max(5000).default(1200) }).strict().refine(c => c.endFrame > c.startFrame, "camera end must follow start");
 export const AudioSettingsSchema = z.object({ musicGainDb: z.number().min(-40).max(0).default(0), sfxGainDb: z.number().min(-40).max(0).default(0), targetLufs: z.number().min(-20).max(-12).default(-14), truePeakDb: z.number().min(-6).max(-1).default(-1.5) }).strict();
 export const ExportSchema = z.object({ codec: z.literal("h264").default("h264"), pixelFormat: z.literal("yuv420p").default("yuv420p"), colorSpace: z.literal("bt709").default("bt709"), crf: z.number().int().min(10).max(35).default(18), jpegQuality: z.number().int().min(50).max(100).default(92), audioBitrateK: z.number().int().min(128).max(320).default(192), sampleRate: z.literal(48000).default(48000) }).strict();
+export const MotionPresetSchema = z.object({
+  name: z.literal("poster-stack-depth"),
+  applyTo: z.array(z.enum(["reveal", "benefit"])).min(1).max(2).default(["reveal", "benefit"]),
+  settleFrames: z.number().int().min(8).max(60).default(24),
+  offset: z.number().min(12).max(48).default(36),
+  tiltDegrees: z.number().min(0).max(6).default(4),
+}).strict().refine(p => new Set(p.applyTo).size === p.applyTo.length, "duplicate preset scene kind");
+export type MotionPreset = z.infer<typeof MotionPresetSchema>;
 export const EngineConfigSchema = z.object({
   template: z.string().regex(/^[a-z][a-z0-9-]+$/).default("bold-commercial"),
+  motionPreset: MotionPresetSchema.optional(),
   cameras: z.partialRecord(z.enum(["hook", "problem", "reveal", "benefit", "offer", "cta"]), CameraSchema).optional(),
   bpm: z.number().min(60).max(180).default(120),
   layout: LayoutSchema.default(LayoutSchema.parse({})),

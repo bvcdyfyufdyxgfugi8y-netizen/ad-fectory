@@ -1,0 +1,137 @@
+{
+  "version": 1,
+  "id": "reference-003",
+  "source": {
+    "filename": "1137893752099073286.mp4",
+    "sha256": "c122e26b89a75eaf3bce7c216074e206c66c9126c8302739f4705fd269d5a39b",
+    "availability": "local-untracked",
+    "hashVerification": "verified",
+    "verificationReport": "source-verification.json",
+    "reportedDurationSeconds": 4.436,
+    "reportedWidth": 736,
+    "reportedHeight": 414,
+    "reportedFps": 29.97002997,
+    "measuredDurationSeconds": 4.436009,
+    "measuredVideoDurationSeconds": 4.4044,
+    "measuredWidth": 736,
+    "measuredHeight": 414,
+    "measuredFps": 29.97002997002997
+  },
+  "license": {
+    "status": "unknown",
+    "usage": "reference-only",
+    "attribution": "User-supplied Mirinda advertising reference; brand imagery remains reference-only"
+  },
+  "provenance": {
+    "archiveFilename": "adfactory-reference-003.zip",
+    "archiveSha256": "28708f4d89bc75aa5e03b1920ed9281f13e445b07d94f9a6b15cf61843dd7225",
+    "importedOn": "2026-10-10",
+    "repository": "bvcdyfyufdyxgfugi8y-netizen/ad-fectory"
+  },
+  "artifacts": [
+    {
+      "role": "analysis",
+      "file": "analysis.md",
+      "sha256": "1fa368798473372f63e74a211bf727b6eebc243437c9a04e168b122bf97ae8dd"
+    },
+    {
+      "role": "contact-sheet",
+      "file": "contact.jpg",
+      "sha256": "cbba5b6a224d96a27e36570e26f80e87e3cdf9b9894a18222f95a851938ac47b"
+    },
+    {
+      "role": "index",
+      "file": "timeline.json",
+      "sha256": "d3b99c059f3eed678fb879165b084c49e95dd4947d144a031592a868e4c49e06"
+    },
+    {
+      "role": "task",
+      "file": "codex-task.md",
+      "sha256": "a35453b859bda00e1f9252037f7e8c905e2813cdf207d691f738575b27c29563"
+    },
+    {
+      "role": "verification",
+      "file": "source-verification.json",
+      "sha256": "bd41ffe06a08bf1ec5e560f2b67d097b65f38e9dae4214c9fdf4eb276f7198e0"
+    },
+    {
+      "role": "frame-sample",
+      "file": "frame-008.png",
+      "sha256": "d453e7c7d786f26b2aa7efc1339611665a4365cc6f7d23d90ccde2a9ced1ce2f"
+    },
+    {
+      "role": "frame-sample",
+      "file": "frame-028.png",
+      "sha256": "647812d2ddcf480725e0b0a32e560d750295d5275c86c08bd417be0b156e9c56"
+    },
+    {
+      "role": "frame-sample",
+      "file": "frame-062.png",
+      "sha256": "98cede8145c64fa7c04ee1bcdb9a4f25c38d5452de59631d014235ae412c40b2"
+    },
+    {
+      "role": "frame-sample",
+      "file": "frame-080.png",
+      "sha256": "b9e24954561c9ca76198469fcc8d300ae750de74f4430bb1f2604d102be175b8"
+    },
+    {
+      "role": "frame-sample",
+      "file": "frame-107.png",
+      "sha256": "83aafd006d37e5a136ccbd4f46a3ce5a20c7f86772af44babcd11eb2cae72c43"
+    },
+    {
+      "role": "contact-sheet",
+      "file": "all-132-frames.jpg",
+      "sha256": "db3d0197d27087c376201fa576428589a7e839b11c2a0fd450fde1497fef18a5"
+    }
+  ],
+  "analysis": {
+    "status": "conflicting-evidence",
+    "confidence": 0.9,
+    "observations": [
+      {
+        "startSeconds": 0,
+        "endSeconds": 4.4044,
+        "statement": "Source and contact sheet show a stable asymmetric product grid with rounded tiles and light gutters, using cyan, orange, green and yellow tile fields.",
+        "status": "observed",
+        "confidence": 0.98,
+        "evidence": "source-video"
+      },
+      {
+        "startSeconds": 0.267,
+        "endSeconds": 3.571,
+        "statement": "Inspected frames change the large can flavor/art and tile contents while the outer grid remains stable; wordmarks and small symbols change inside their assigned tiles. Exact easing/keyframes were not measured.",
+        "status": "observed",
+        "confidence": 0.95,
+        "evidence": "source-video"
+      },
+      {
+        "startSeconds": 0,
+        "endSeconds": 4.4044,
+        "statement": "The supplied READY/GO stage replacement and pink scene reset are not demonstrated by the source samples or complete source contact sheet.",
+        "status": "conflicting",
+        "confidence": 0.98,
+        "evidence": "source-video"
+      },
+      {
+        "startSeconds": 0,
+        "endSeconds": 4.4044,
+        "statement": "Independent original product tiles could use frame-controlled GSAP transforms for local reveals while retaining a readable outer grid. This is a future proposal, not implemented.",
+        "status": "hypothesized",
+        "confidence": 0.7,
+        "evidence": "none"
+      }
+    ],
+    "proposedPresets": [
+      "asymmetric-product-grid",
+      "tile-content-loop",
+      "flavor-color-swap"
+    ],
+    "warnings": [
+      "Original supplied analysis and timeline are retained for provenance and are not trusted choreography.",
+      "Footage stored locally only; no production imagery or video redistribution.",
+      "No audio listening, BPM inference or synchronization verification performed.",
+      "User requested creative-memory ingestion and images only; no Reference 003 animations or videos created."
+    ]
+  }
+}

@@ -1,5 +1,15 @@
 # Changelog
 
+## Unreleased · Reference memory 001/003 and optional motion experiment
+- GSAP 3.15.0 installed on explicit owner request; existing transforms/parallax retained.
+- Reference 003 source inspection, corrected product-grid findings and evidence-linked creative memory.
+- Image-only Reference 003 delivery; original footage remains local and untracked.
+- Reference-only ingestion schema with full SHA-256, provenance, license and evidence/confidence validation.
+- Reviewed cartoon contact sheet; documented its conflict with the supplied montage analysis.
+- One optional JSON-selected poster-stack-depth preset, leaving default scenes intact.
+- Focused metadata/timing/cache tests and repeatable native PNG snapshot verification CLI.
+- Independent branch and before/after evidence; owner review required before merge.
+
 ## 0.3.0 · 2026-10-10 · Reusable advertisement engine
 - Validated optional layout/type/motion/camera/audio/export settings and named product/text/asset contracts.
 - Shared template registry and timeline/SFX generator; early render-plan and asset ownership validation.

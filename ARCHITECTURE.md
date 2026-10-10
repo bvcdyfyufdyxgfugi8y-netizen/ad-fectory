@@ -104,3 +104,17 @@ geometry and other templates are future implementations; unsupported identifiers
 Export settings are validated and honored by render/mux. Audio settings control local synthesis/mix; picture
 cache excludes audio controls/bitrate while audio cache excludes visual settings. Engine/render implementation
 hashes invalidate stale picture caches. Input assets are checked by realpath, including symlink escapes.
+
+
+## Reference learning experiment
+`src/core/reference.ts` and `src/references/load.ts` validate isolated, reference-only manifests and supplied
+file hashes. `references/reference-001/` retains the source package with a reviewed evidence record.
+An optional `engine.motionPreset` chooses the one experimental poster-stack-depth renderer in
+`src/remotion/motion/presets/`; other scenes remain on their existing path. This creates no new template,
+provider or dependency. `src/cli/reference-snapshots.ts` verifies three native PNGs across two fresh bundles.
+
+`references/creative-memory.json` links original reuse guidance to verified observations.
+`src/creative/reference-memory.ts` validates and retrieves lessons through `ReferenceMemory`;
+`npm run references` exposes the catalog without rendering or invoking a model. Reference 003 source
+hash/metadata were measured at import; its video remains local/untracked and the import report is verified.
+GSAP 3.15.0 is installed; default render motion still uses the existing frame primitives.

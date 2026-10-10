@@ -1,0 +1,8 @@
+{
+  "status": "PASS",
+  "firstSeconds": 587.3,
+  "cachedSeconds": 32.5,
+  "textEditSeconds": 276.7,
+  "allFourExportsQcPass": true,
+  "scope": "Existing CLI production/cache/CTA-edit/restoration acceptance; completed before image-only instruction"
+}

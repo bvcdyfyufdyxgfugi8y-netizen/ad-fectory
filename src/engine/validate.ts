@@ -22,6 +22,7 @@ export function validatePlan(sb: Storyboard, brief?: Brief): void {
     if (!s.headline.trim() || s.headline.length > 120 || (s.sub?.length ?? 0) > 120 || s.durationInFrames / sb.fps < 0.7 + words * (sb.language === "ar" ? 0.32 : 0.28)) errors.push(`${s.id}: unreadable text/duration`);
     if (!(tpl.motions[s.kind] as readonly string[]).includes(s.motion)) errors.push(`${s.id}: unsupported motion ${s.motion}`);
     if (s.emphasis.some(i => i >= s.headline.split(/[ \t\n]+/).filter(Boolean).length)) errors.push(`${s.id}: emphasis outside text`);
+    if (cfg.motionPreset?.applyTo.includes(s.kind as "reveal" | "benefit") && cfg.motionPreset.settleFrames + 12 >= duration) errors.push(`${s.id}: preset settling exceeds scene clock`);
     if (s.camera && s.camera.endFrame >= duration) errors.push(`${s.id}: camera exceeds scene clock`);
     if (!s.source.length) errors.push(`${s.id}: content source required`);
     if (brief && s.image && !brief.product.images.includes(s.image)) errors.push(`${s.id}: image must belong to product`);

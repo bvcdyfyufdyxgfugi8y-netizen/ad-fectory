@@ -1,0 +1,89 @@
+{
+  "version": 1,
+  "references": [
+    {
+      "id": "reference-001",
+      "manifest": "reference-001/ingestion.json"
+    },
+    {
+      "id": "reference-003",
+      "manifest": "reference-003/ingestion.json"
+    }
+  ],
+  "lessons": [
+    {
+      "id": "cartoon-outline-hierarchy",
+      "referenceId": "reference-001",
+      "observationIndices": [
+        0,
+        1,
+        2
+      ],
+      "technique": "cartoon-outline-hierarchy",
+      "confidence": 0.9,
+      "sourceAspect": "9:16",
+      "guidance": [
+        "Use clear outlines and a limited palette to separate the main subject from the environment.",
+        "Alternate a wider subject view with readable detail views; choose actual timings from the new script."
+      ],
+      "limits": [
+        "Contact-sheet evidence only; original continuous motion and audio were not inspected.",
+        "Do not copy the reference characters, anatomy or medical claims."
+      ]
+    },
+    {
+      "id": "asymmetric-product-grid",
+      "referenceId": "reference-003",
+      "observationIndices": [
+        0
+      ],
+      "technique": "asymmetric-product-grid",
+      "confidence": 0.98,
+      "sourceAspect": "16:9",
+      "guidance": [
+        "Keep a stable outer grid with a dominant hero tile and smaller supporting tiles.",
+        "For 9:16, reflow the grid and keep product/text safe areas; do not stretch the horizontal reference."
+      ],
+      "limits": [
+        "No production preset for this recipe is implemented.",
+        "Create original tile art from owned brief assets; reference brand media are excluded."
+      ]
+    },
+    {
+      "id": "tile-content-loop",
+      "referenceId": "reference-003",
+      "observationIndices": [
+        1
+      ],
+      "technique": "tile-content-loop",
+      "confidence": 0.95,
+      "sourceAspect": "16:9",
+      "guidance": [
+        "Animate content inside isolated tile masks while preserving the grid hierarchy.",
+        "Use frame-controlled transforms for original local reveals; GSAP timelines must be paused and sought by frame."
+      ],
+      "limits": [
+        "Exact easing, keyframes, stagger and audio synchronization are not measured.",
+        "GSAP availability does not mean this recipe is implemented."
+      ]
+    },
+    {
+      "id": "flavor-color-swap",
+      "referenceId": "reference-003",
+      "observationIndices": [
+        1
+      ],
+      "technique": "flavor-color-swap",
+      "confidence": 0.95,
+      "sourceAspect": "16:9",
+      "guidance": [
+        "An owned product variant may replace hero imagery inside the same tile while surrounding structure stays readable.",
+        "Change only palette/variant facts actually supplied by the client."
+      ],
+      "limits": [
+        "No READY/GO word switch or global pink reset is observed in this reference.",
+        "Never infer product flavors or claims from the third-party reference."
+      ]
+    }
+  ]
+}

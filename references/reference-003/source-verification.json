@@ -1,0 +1,17 @@
+{
+  "sourceSha256": "c122e26b89a75eaf3bce7c216074e206c66c9126c8302739f4705fd269d5a39b",
+  "verifiedAtImport": true,
+  "sourceStorage": "Local ignored out/reference-library/reference-003/source.mp4; not distributed",
+  "width": 736,
+  "height": 414,
+  "fpsNumerator": 30000,
+  "fpsDenominator": 1001,
+  "videoDurationSeconds": 4.4044,
+  "audioDurationSeconds": 4.436009,
+  "videoFrames": 132,
+  "audioCodec": "aac",
+  "sampleRate": 44100,
+  "observedSubject": "Mirinda branded product grid throughout sampled sequence; not READY/GO typography",
+  "inspection": "Source samples at native frame indices 8,28,62,80,107 plus complete 132-frame contact sheet",
+  "audioTiming": "Not listened to or rhythm analyzed; no BPM/sync claims"
+}

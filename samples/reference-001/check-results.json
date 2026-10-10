@@ -1,0 +1,10 @@
+{
+  "check": "PASS",
+  "namedTests": 50,
+  "typecheck": "PASS",
+  "lint": "PASS",
+  "gsapVersion": "3.15.0",
+  "gsapSmoke": "paused seek/transform PASS",
+  "newReference003Videos": 0,
+  "newDeliveredMp4s": 0
+}

@@ -1,0 +1,19 @@
+{
+  "briefId": "demo-reference-001",
+  "director": "rule-based@1",
+  "final": "out/demo-reference-001/delivery/demo-reference-001.mp4",
+  "timings": {
+    "audio": 0,
+    "render": 0,
+    "mux": 0.6,
+    "qc": 4.8,
+    "delivery": 15.8,
+    "total": 21.2
+  },
+  "cached": {
+    "audio": true,
+    "video": true
+  },
+  "paidApiCalls": 0,
+  "costUSD": 0
+}
