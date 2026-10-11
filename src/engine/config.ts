@@ -8,7 +8,14 @@ export const LayoutSchema = z.object({
   type: z.object({ hook: size.default(128), reveal: size.default(104), benefit: size.default(78), offer: size.default(210), cta: size.default(82) }).strict().default({ hook: 128, reveal: 104, benefit: 78, offer: 210, cta: 82 }),
   product: z.object({ reveal: z.number().min(100).max(1000).default(900), benefit: z.number().min(100).max(1000).default(760), cta: z.number().min(100).max(1000).default(700) }).strict().default({ reveal: 900, benefit: 760, cta: 700 }),
 }).strict();
+export const ToonMotionSchema = z.object({
+  assemblyBeats: z.number().int().min(1).max(4).default(3),
+  orbitTurns: z.number().min(0).max(2).default(1),
+  burstIntensity: z.number().min(0).max(1).default(0.7),
+}).strict();
+export type ToonMotion = z.infer<typeof ToonMotionSchema>;
 export const AnimationSchema = z.object({
+  toon: ToonMotionSchema.optional(),
   transitionFrames: z.number().int().min(1).max(30).default(10),
   kineticSpring: SpringSchema.default({ damping: 14, stiffness: 170, mass: 0.7 }),
   floatAmplitude: z.number().min(0).max(60).default(10),

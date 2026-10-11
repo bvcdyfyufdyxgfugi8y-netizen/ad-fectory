@@ -5,6 +5,11 @@ export const templateDefinitions = {
     motions: { hook: ["kinetic-pop", "push-in"], problem: ["kinetic-pop", "push-in"], reveal: ["mask-reveal"], benefit: ["slide-card"], offer: ["stamp"], cta: ["pulse"] },
     capabilities: ["kinetic-type", "transitions", "pan-zoom", "parallax", "2d", "css-perspective"],
   },
+  "toon-commercial": {
+    compositionId: "ToonCommercial", width: 1080, height: 1920, fps: 30,
+    motions: { hook: ["kinetic-pop", "push-in"], problem: ["kinetic-pop", "push-in"], reveal: ["mask-reveal"], benefit: ["slide-card"], offer: ["stamp"], cta: ["pulse"] },
+    capabilities: ["kinetic-type", "transitions", "pan-zoom", "parallax", "2d", "illustrated-depth"],
+  },
 } as const;
 export function templateDefinition(id: string) {
   const definition = templateDefinitions[id as keyof typeof templateDefinitions];

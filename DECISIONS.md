@@ -98,3 +98,10 @@ comparison and create no further videos. The confirmed product-grid footage cont
 READY/GO analysis. Track review images/reports, store source video in ignored local output, and expose
 evidence-linked retrieval without modifying the default creative director. Review branch is now
 `codex/reference-learning-003`; no automatic merge.
+
+## 2026-10-11 — Optional illustrated 2D template
+Owner explicitly requested a short 2D motion video, then clarified cartoon styling with
+apparent 3D volume. Extend the existing registry with `toon-commercial`; use drawn facets,
+highlights and shadows, not an out-of-plane camera. Reject unsupported perspective controls.
+Keep actual product data/assets local and preserve the original template. New work stays on
+`codex/kinza-2d-motion`; previous main integration approval does not authorize this merge.

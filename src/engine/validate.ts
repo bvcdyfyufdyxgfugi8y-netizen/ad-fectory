@@ -8,6 +8,9 @@ export function validatePlan(sb: Storyboard, brief?: Brief): void {
   const cfg = settings(sb.engine);
   const tpl = templateDefinition(sb.template);
   const errors: string[] = [];
+  if (cfg.animation.toon && sb.template !== "toon-commercial") errors.push("toon staging requires toon-commercial");
+  if (sb.template === "toon-commercial" && cfg.animation.toon && sb.scenes[0]!.durationInFrames < (cfg.animation.toon.assemblyBeats + 1) * sb.fps * 60 / sb.bpm) errors.push("toon assembly must settle before the first cut");
+  if (sb.template === "toon-commercial" && cfg.motionPreset) errors.push("toon-commercial does not support perspective presets");
   if (cfg.template !== sb.template || cfg.bpm !== sb.bpm) errors.push("engine template/BPM must match storyboard");
   if (sb.width !== tpl.width || sb.height !== tpl.height || sb.fps !== tpl.fps) errors.push("template supports only 1080×1920 at 30 fps");
   const fpb = sb.fps * 60 / sb.bpm;
@@ -23,6 +26,7 @@ export function validatePlan(sb: Storyboard, brief?: Brief): void {
     if (!(tpl.motions[s.kind] as readonly string[]).includes(s.motion)) errors.push(`${s.id}: unsupported motion ${s.motion}`);
     if (s.emphasis.some(i => i >= s.headline.split(/[ \t\n]+/).filter(Boolean).length)) errors.push(`${s.id}: emphasis outside text`);
     if (cfg.motionPreset?.applyTo.includes(s.kind as "reveal" | "benefit") && cfg.motionPreset.settleFrames + 12 >= duration) errors.push(`${s.id}: preset settling exceeds scene clock`);
+    if (sb.template === "toon-commercial" && s.camera && [s.camera.from, s.camera.to].some(p => p.rotateX !== 0 || p.rotateY !== 0)) errors.push(`${s.id}: toon-commercial camera is 2D only`);
     if (s.camera && s.camera.endFrame >= duration) errors.push(`${s.id}: camera exceeds scene clock`);
     if (!s.source.length) errors.push(`${s.id}: content source required`);
     if (brief && s.image && !brief.product.images.includes(s.image)) errors.push(`${s.id}: image must belong to product`);

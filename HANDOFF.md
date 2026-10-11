@@ -112,3 +112,17 @@ Owner-approved PR #1 merged as `cf509189625110fc2469c5de6189f5ef7b6dfa59`; retar
 Validation before integration: 64 tests/typecheck/lint and production build PASS; no new video export. Raw reference 004 is retained in ignored local `out/reference-library/reference-004/source.mp4`; committed evidence is under `references/reference-004/`. Original ads and briefs remain unchanged.
 
 Post-merge local main verification: all 64 tests/typecheck/lint PASS; GSAP 3.15.0 installed and paused timeline seek smoke PASS. Local source preservation verified; final status documentation pushed to main.
+
+## Kinza cartoon 2D preview (2026-10-11, separate review branch)
+
+Owner authorized a short video after an earlier images-only preference, then requested a
+cartoon 2D aesthetic with apparent 3D volume. Optional `toon-commercial` extends the existing
+engine/registry with drawn facets/shadows, staggered type, floating illustrated decorations
+and planar product motion. It rejects perspective presets/rotateX/rotateY. The original
+template and historical assets remain unchanged. Branch: `codex/kinza-2d-motion`; no new
+main merge is authorized. See `docs/toon-commercial.md` and
+`docs/reports/kinza-2d-motion-results.md` for actual verification and limitations.
+
+Client/generated artwork, editable inputs and actual 10s video are local/ignored under
+`out/kinza-2d-motion/`. Do not commit those assets or treat reconstructed packaging as
+approved brand artwork. Feedback is recorded in the existing memory without promotion.

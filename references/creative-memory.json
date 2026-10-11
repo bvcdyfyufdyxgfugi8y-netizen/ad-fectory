@@ -391,5 +391,59 @@
       "guidance": "Keep the hero/title stable and readable while lower-priority owned accents move around it."
     }
   ],
-  "feedback": []
+  "feedback": [
+    {
+      "id": "toon-2d-preview-001",
+      "productionId": "kinza-2d-motion",
+      "techniqueIds": [
+        "kinetic-typography",
+        "smooth-transition"
+      ],
+      "outcome": "unverified",
+      "succeeded": [
+        "Real 300-frame 10-second export passed technical QC",
+        "Sampled frames show joined Arabic text and visible illustrated product",
+        "Four original-template PNG frames remain byte-identical"
+      ],
+      "needsImprovement": [
+        "Generic CTA contrast heuristic assumes a button absent from the new template",
+        "Generated raster packaging needs brand review and vector artwork for finer editability",
+        "Subjective audio fit and commercial response remain unmeasured"
+      ],
+      "evidence": [
+        "docs/reports/kinza-2d-motion-results.md",
+        "tests/toon-template.test.ts"
+      ],
+      "tested": true
+    },
+    {
+      "id": "toon-continuous-preview-002",
+      "productionId": "kinza-2d-motion",
+      "techniqueIds": [
+        "staggered-parts-assembly",
+        "secondary-motion-hold",
+        "kinetic-typography",
+        "smooth-transition"
+      ],
+      "outcome": "unverified",
+      "succeeded": [
+        "Owner-directed experimental variant transfers assembly/secondary-motion principles without reference product assets or claims",
+        "Three-segment video keeps one persistent product instead of repeated scene entrances",
+        "Real 300-frame export passes technical QC; sampled paper-slice assembly, orbit depth ordering and color-wave transition are visible",
+        "Text exits before incoming type to remove sampled duplicate-heading overlap"
+      ],
+      "needsImprovement": [
+        "Brand accuracy of generated raster packaging needs owner review",
+        "Commercial creativity improvement and subjective audio fit are unmeasured",
+        "Generic CTA button contrast heuristic is not template-specific",
+        "Experimental staging is explicitly configured, not automatically selected as an approved reference executor"
+      ],
+      "evidence": [
+        "docs/reports/kinza-2d-motion-results.md",
+        "docs/toon-commercial.md",
+        "tests/toon-template.test.ts"
+      ],
+      "tested": true
+    }
+  ]
 }

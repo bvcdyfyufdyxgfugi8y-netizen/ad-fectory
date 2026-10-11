@@ -41,3 +41,9 @@ No deployment or paid generation. Review branch/PR delivery is authorized by the
 
 GSAP 3.15.0 was subsequently installed on the owner's explicit request, under its standard no-charge
 license. One new dependency; no paid calls or spend. Reference 003 delivery consists of images and data.
+
+## Kinza 2D design preview — 2026-10-11
+No external paid provider APIs, new dependencies, deployment or publishing. Product artwork
+uses the session's native image generation; its platform billing is not measured here.
+Motion, music/SFX synthesis, encoding and QC run locally. No ElevenLabs or other paid
+music/voice API was called.

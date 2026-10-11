@@ -51,3 +51,13 @@
 - QC frame count parse (`600,` from ffprobe CSV).
 - Product name broke across lines in the hook → names are kept together with no-break spaces.
 - 10-second ads with 3 benefits + price could not fit readable text → later benefits drop automatically; impossible fits fail clearly.
+
+## Unreleased — cartoon 2D motion (review branch)
+- Optional Toon Commercial template with staggered type, animated illustrated bubbles,
+  drawn-depth accents, spring product entrances and shared scene/audio timeline.
+- Reuse existing structured inputs, render/export/cache/QC; reject unsupported perspective
+  controls rather than silently ignoring them. Existing Bold Commercial remains unchanged.
+- Two-product planning/ownership and unsupported-camera regression tests added.
+- Feedback regression supports a growing library while verifying existing entries remain unchanged.
+- Continuous experimental staging adds beat-aware paper-slice assembly, planar orbit depth,
+  a color-wave transition and a persistent hero; text exits prevent overlapping headings.

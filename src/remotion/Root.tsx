@@ -3,6 +3,7 @@ import React from "react";
 import { Composition, continueRender, delayRender } from "remotion";
 import { StoryboardSchema, type Storyboard } from "../core/schema.ts";
 import { AdComposition } from "./templates/registry.tsx";
+import { settings } from "../engine/config.ts";
 import { templateDefinitions } from "../engine/templates.ts";
 import { validatePlan } from "../engine/validate.ts";
 import { ruleBasedDirector } from "../creative/director.ts";
@@ -27,7 +28,7 @@ export const Root: React.FC = () => <>
     key={template.compositionId}
     id={template.compositionId}
     component={AdComposition}
-    defaultProps={{ storyboard: demo as Storyboard }}
+    defaultProps={{ storyboard: template.compositionId === "BoldCommercial" ? demo as Storyboard : { ...demo, template: "toon-commercial", engine: settings({ template: "toon-commercial" }) } as Storyboard }}
     calculateMetadata={({ props }) => {
       const sb = StoryboardSchema.parse(props.storyboard);
       validatePlan(sb);

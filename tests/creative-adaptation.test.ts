@@ -91,8 +91,9 @@ test("memory deduplicates canonical aliases and feedback cannot approve recipes 
     recordCreativeFeedback({ id: "review-test", productionId: "product-test", techniqueIds: ["asymmetric-product-grid"], outcome: "unverified", succeeded: [], needsImprovement: ["Implementation required"], evidence: ["Storyboard review only"], tested: false }, folder);
     const after = JSON.parse(fs.readFileSync(path.join(folder, "creative-memory.json"), "utf8"));
     assert.deepEqual(after.techniques, before.techniques);
-    assert.equal(after.feedback.length, 1);
-    assert.throws(() => recordCreativeFeedback(after.feedback[0], folder), /duplicate feedback/);
+    assert.equal(after.feedback.length, before.feedback.length + 1);
+    assert.deepEqual(after.feedback.slice(0, before.feedback.length), before.feedback);
+    assert.throws(() => recordCreativeFeedback(after.feedback.at(-1), folder), /duplicate feedback/);
   } finally { fs.rmSync(folder, { recursive: true, force: true }); }
 });
 test("analysis coverage has all 14 domains with unmeasured audio and commercial impact unknown", () => {

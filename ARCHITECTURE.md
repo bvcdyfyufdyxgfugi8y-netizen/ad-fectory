@@ -118,3 +118,16 @@ provider or dependency. `src/cli/reference-snapshots.ts` verifies three native P
 `npm run references` exposes the catalog without rendering or invoking a model. Reference 003 source
 hash/metadata were measured at import; its video remains local/untracked and the import report is verified.
 GSAP 3.15.0 is installed; default render motion still uses the existing frame primitives.
+
+## Experimental illustrated 2D template (2026-10-11)
+`src/remotion/templates/toon-commercial/ToonCommercial.tsx` extends the existing shared
+registry/Composition dispatcher. It takes the same Storyboard and assetBase, uses the same
+scene timeline and frame primitives, and draws decorative planar layers separately from
+product/text. Apparent depth comes from artwork and offset silhouettes. Validation rejects
+rotateX/rotateY cameras and the old perspective preset for this template. See
+`docs/toon-commercial.md`. No parallel pipeline or product-specific animation source.
+
+Optional `engine.animation.toon` validates continuous assembly/orbit/burst controls.
+`src/remotion/motion/toon-stage.ts` computes shared beat-aware planar hero state;
+Toon Commercial separates that persistent asset layer from text sequences. Omitting the
+optional controls preserves legacy config serialization and existing default production.

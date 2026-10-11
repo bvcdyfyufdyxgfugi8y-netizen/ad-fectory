@@ -84,3 +84,21 @@ Owner-approved PR #1 merged as `cf509189625110fc2469c5de6189f5ef7b6dfa59`; retar
 Validation before integration: 64 tests/typecheck/lint and production build PASS; no new video export. Raw reference 004 is retained in ignored local `out/reference-library/reference-004/source.mp4`; committed evidence is under `references/reference-004/`. Original ads and briefs remain unchanged.
 
 Post-merge local main verification: all 64 tests/typecheck/lint PASS; GSAP 3.15.0 installed and paused timeline seek smoke PASS. Local source preservation verified; final status documentation pushed to main.
+
+## Kinza cartoon 2D preview — 2026-10-11 (review branch)
+
+Owner requested a short 2D motion video, then cartoon styling with apparent depth. Added
+optional experimental `toon-commercial` to the existing production engine; no old template
+or canonical brief edits. Export: 10s, 1080×1920/30fps, 300 decoded frames, H.264 + AAC48kHz,
+QC PASS with a retained legacy CTA-button contrast heuristic warning. Four old-template
+PNG samples exactly match the previous review tree. Typecheck/lint and all 68 tests pass.
+Results and remaining human/brand review: `docs/reports/kinza-2d-motion-results.md`.
+
+New code remains on `codex/kinza-2d-motion`; main not merged. All product/generated assets
+and editable inputs are ignored local outputs. Next: review the packaging/motion, improve
+QC surface reporting and supply vector artwork before template approval.
+
+Owner requested a more creative restructure. The revised three-segment video now uses
+continuous paper-slice assembly/orbit/color-wave staging rather than repeated entrances.
+The final MP4 has a separate `-v2` filename; V1 is preserved in `versions/v1`. A fresh
+four-frame old-template PNG comparison still matches exactly. See the updated report.
