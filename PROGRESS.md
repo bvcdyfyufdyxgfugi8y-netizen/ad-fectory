@@ -102,3 +102,8 @@ Owner requested a more creative restructure. The revised three-segment video now
 continuous paper-slice assembly/orbit/color-wave staging rather than repeated entrances.
 The final MP4 has a separate `-v2` filename; V1 is preserved in `versions/v1`. A fresh
 four-frame old-template PNG comparison still matches exactly. See the updated report.
+
+Final-source verification completed: all 68 tests/typecheck/lint PASS, complete CLI e2e
+PASS (487s initial / 13.1s cached / 207.9s text edit / 12.8s canonical restore).
+All old-template exports pass QC and canonical output is restored. Source branch pushed
+to GitHub; main remains at `10fb207`. Actual revised MP4 and editable inputs remain local.

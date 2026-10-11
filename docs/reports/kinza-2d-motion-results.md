@@ -32,8 +32,10 @@ variant is experimental and is not automatically selected by the adaptive planne
 - A feedback-growth regression no longer assumes an empty library: it verifies one added
   record, preservation of existing records and duplicate rejection.
 - Studio runs locally on port 3015 (HTTP 200).
-- Earlier complete engine e2e passed: first 301.2s, fully cached 12.7s, CTA edit 225.2s,
-  canonical restore 12.8s. Final source is undergoing the required repeat e2e below.
+- Complete final-source `npm run e2e` PASS: first render 487s, fully cached 13.1s,
+  CTA edit 207.9s (picture rebuilt/audio reused), canonical restore 12.8s. All four
+  exports pass QC; the old canonical delivery is restored. Timings include shared
+  environment load and are not an isolated performance benchmark.
 - Fresh pre-/post-change bundles rendered old-template frames 60, 200, 431 and 580
   after the continuous revision. All four PNG files are byte-identical. Selected-frame
   equivalence is not whole-video equivalence.

@@ -126,3 +126,8 @@ main merge is authorized. See `docs/toon-commercial.md` and
 Client/generated artwork, editable inputs and actual 10s video are local/ignored under
 `out/kinza-2d-motion/`. Do not commit those assets or treat reconstructed packaging as
 approved brand artwork. Feedback is recorded in the existing memory without promotion.
+
+Final-source verification completed: all 68 tests/typecheck/lint PASS, complete CLI e2e
+PASS (487s initial / 13.1s cached / 207.9s text edit / 12.8s canonical restore).
+All old-template exports pass QC and canonical output is restored. Source branch pushed
+to GitHub; main remains at `10fb207`. Actual revised MP4 and editable inputs remain local.
